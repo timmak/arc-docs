@@ -1,0 +1,6 @@
+{
+  "name": "arc-www-get-examples-000exampleID",
+  "dependencies": {
+    "@smallwins/arc-prototype": "^1.1.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "arc-www-get-guides",
+  "dependencies": {
+    "@smallwins/arc-prototype": "^1.0.28"
+  }
+}
