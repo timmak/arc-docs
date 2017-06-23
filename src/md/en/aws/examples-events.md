@@ -2,7 +2,8 @@
 
 ```bash
 # .arc
-@testapp
+@app
+testapp
 
 @events
 hello

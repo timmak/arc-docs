@@ -1,8 +1,10 @@
 var arc = require('@smallwins/arc-prototype')
+var render = require('@smallwins/arc-www-md')
 
-function route(req, res) {
-  console.log(JSON.stringify(req, null, 2))
-  res({html:`hello world`})
+function index(req, res) {
+  res({
+    html: render(`intro-${req.params.introID}`)
+  })
 }
 
-exports.handler = arc.html.get(route)
+exports.handler = arc.html.get(index)

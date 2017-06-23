@@ -1,9 +1,9 @@
 var arc = require('@smallwins/arc-prototype')
-var layout = require('@smallwins/arc-www-md/layout-sync')
+var render = require('@smallwins/arc-www-md')
 
 function index(req, res) {
   res({
-    html: layout('intro')
+    html: render('intro')
   })
 }
 

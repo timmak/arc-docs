@@ -29,7 +29,3 @@
   - [capture and view logs](/guides/logging)
   - [synchronize dependencies](/guides/deps)
   - [automate releases](/guides/releases)
-
----
-
-> architecture as text

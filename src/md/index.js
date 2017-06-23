@@ -1,35 +1,43 @@
-var waterfall = require('run-waterfall')
-var md = require('marked')
 var fs = require('fs')
-var path = require('path')
+var md = require('marked')
+var join = require('path').join
 var ledger = {}
 
-/**
- * Accepts a string identifier for a markdown file and returns it as HTML. The read is cached.
- *
- * usage
- *   
- *   var html = md('intro-concepts')
- */
-module.exports = function _md(filename, callback) {
-  if (ledger[filename]) {
-    callback(null, ledger[filename])
+module.exports = function render(filename) {
+
+  var cached = ledger.hasOwnProperty(filename)
+  if (!cached) {
+    var path = join(__dirname, 'en', 'aws', `${filename}.md`)
+
+    var exists = fs.existsSync(path)
+    if (exists) {
+
+      var title = 'arc'
+      var style = fs.readFileSync(join(__dirname, 'style.css')).toString()
+      var nav = fs.readFileSync(join(__dirname, 'en', 'aws', '_nav.md')).toString()
+      var body = fs.readFileSync(path).toString()
+
+      ledger[filename] = `
+        <html>
+        <head>
+          <title>${title}</title>
+          <style type=text/css>${style}</style>
+        </head>
+        <body>
+        <section>
+          <header>
+            <nav>${md(nav)}</nav>
+          </header>
+          <section>${md(body)}</section>
+          <footer></footer>
+        </section>
+        </body>
+        </html>
+      `
+    }
+    else {
+      ledger[filename] = '' // TODO empty str means 404
+    }
   }
-  else {
-    var filepath = path.join(__dirname, 'en', 'aws', `${filename}.md`)
-    waterfall([
-      function _read(callback) {
-        fs.readFile(filepath, callback)
-      },
-      function _parse(buffer, callback) {
-        var str = buffer.toString()
-        var html = md(str)
-        callback(null, html)
-      },
-      function _cache(html, callback) {
-        ledger[filename] = html
-        callback(null, html)
-      }
-    ], callback)
-  }
+  return ledger[filename] 
 }

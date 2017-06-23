@@ -1,5 +1,5 @@
 var test = require('tape')
-var layout = require('../src/md/layout-sync')
+var layout = require('../src/md')
 
 test('env', t=> {
   t.plan(1)
@@ -8,7 +8,7 @@ test('env', t=> {
 
 test('index.md html', t=> {
   t.plan(1)
-  var html = layout('index')
+  var html = layout('guides')
   t.ok(html, 'got md')
   console.log(html)
 })
