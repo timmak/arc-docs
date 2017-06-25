@@ -19,6 +19,7 @@
     "tape": "^4.6.3"
   },
   "dependencies": {
-    "@smallwins/arc-create": "^1.0.32"
+    "@smallwins/arc-create": "^1.0.32",
+    "marked": "^0.3.6"
   }
 }
