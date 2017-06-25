@@ -3,7 +3,7 @@ var render = require('@smallwins/arc-www-md')
 
 function index(req, res) {
   res({
-    html: render(`guide-${req.params.guideID}`)
+    html: render(`guides-${req.params.guideID}`)
   })
 }
 

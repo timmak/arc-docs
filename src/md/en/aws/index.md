@@ -1,4 +1,4 @@
-# arc
+# architect
 
 > provision and deploy cloud architecture as text
 
@@ -9,7 +9,7 @@ Currently supporting Amazon Web Services:
 - DynamoDB
 - SNS
 
-Everything you do with Architect starts with a `.arc` file:
+Everything you do with `architect` starts with a `.arc` file:
 
 ```bash
 # this is an .arc file
@@ -27,7 +27,7 @@ style.css
 index.js
 ```
 
-`arc-create` generates this cloud function code:
+Running `npm run create` generates cloud function code:
 
 ```
 /
@@ -45,10 +45,23 @@ index.js
 
 ```
 
-`arc-deploy` ships this code to :cloud: supporting both `staging` and `production` environments.
+And `npm run deploy` ships this code to the &#x2601;.
 
-There's lots more to it! From here:
+### Infra Primatives Currently Supported
 
-- [Check out the introduction](/intro)
-- [Read the quickstart](/quickstart)
+- HTTP route handler functions for `applicatin/json`, `text/html`, `text/css` and `text/javascript`
+- Subscribe functions to events (and publish events from any other function)
+- Scheduled functions 
+- Database tables, indexes and trigger functions
+
+### Workflows Currently Supported
+
+- **create infra** from a `.arc` manifest (makes deletion and re-creation of infrastructure trivial; change regions in minutes)
+- **work locally** while completely offline [IN PROGRESS] (including in memory dynamo instance so its super fast--h/t dynalite!)
+- **deploy in seconds** (setup with `staging` and `production` using environment variable `NODE_ENV`)
+ 
+## Next Steps
+
+- [Read the introduction](/intro)
+- [Follow the quickstart](/quickstart)
 - [Copy/paste examples](/examples)

@@ -1,10 +1,6 @@
 # Install
 
-From an installation perspective arc is a set of npm run scripts and an otherwise vanilla node project. 
-
-Before you start make sure you are setup with AWS Credentials.
-
-Then open up a terminal and create a project folder:
+Open up a terminal and create a project folder:
 
 ```bash
 mkdir mytestapp
@@ -24,7 +20,7 @@ Add the following to `package.json`:
 }
 ```
 
-And the following for the `.arc` file:
+And then paste the following contents into the `.arc` file:
 
 ```bash
 @app
@@ -37,4 +33,8 @@ get /
 get /api
 ```
 
-Finally run `npm run create` and check out the deployed app. You have successfully *"installed"* arc!
+Run `npm run create` and check out the freshly deployed app. You have successfully *"installed"* arc!
+
+## Next Steps
+
+- Get a sense of the [project layout](/quickstart/arc-project-layout).

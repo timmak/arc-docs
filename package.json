@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "create": "AWS_PROFILE=personal AWS_REGION=us-east-1 arc-create",
-    "deploy": "AWS_PROFILE=personal AWS_REGION=us-east-1 arc-deploy",
+    "create": "AWS_PROFILE=personal AWS_REGION=us-west-1 arc-create",
+    "deploy": "AWS_PROFILE=personal AWS_REGION=us-west-1 arc-deploy",
     "test": "tape test/* | tap-spec",
     "t": "tape test/md-slow-test.js | tap-spec"
   },

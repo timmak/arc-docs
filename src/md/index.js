@@ -41,3 +41,9 @@ module.exports = function render(filename) {
   }
   return ledger[filename] 
 }
+
+function render(req, res) {
+  var filename = req.path.replace('/', '-')
+  var html = _render(filename)
+  res({html})
+}

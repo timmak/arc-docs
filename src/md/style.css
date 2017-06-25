@@ -1,6 +1,21 @@
 body {
-    background: #eaeaea;
-  }
+  background: #eaeaea;
+  font-size: larger;
+}
+
+blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #ccc;
+  margin: 0;
+}
+
+pre {
+  color:white;
+  padding:17px;
+  border-radius: 5px;
+  background:black;
+}
 
   header {
       width:15%;
