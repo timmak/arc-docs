@@ -56,9 +56,9 @@ And `npm run deploy` ships this code to the &#x2601;.
 
 ### Workflows Currently Supported
 
-- **create infra** from a `.arc` manifest (makes deletion and re-creation of infrastructure trivial; change regions in minutes)
-- **work locally** while completely offline [IN PROGRESS] (including in memory dynamo instance so its super fast--h/t dynalite!)
-- **deploy in seconds** (setup with `staging` and `production` using environment variable `NODE_ENV`)
+- **Create infra** from a `.arc` manifest (makes deletion and re-creation of infrastructure trivial; change regions in minutes)
+- **Work locally** while completely offline [IN PROGRESS] (including in memory dynamo instance so its super fast--h/t dynalite!)
+- **Deploy in seconds** (setup with `staging` and `production` using environment variable `NODE_ENV`)
  
 ## Next Steps
 
