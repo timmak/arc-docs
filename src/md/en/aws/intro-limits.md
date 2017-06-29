@@ -13,6 +13,8 @@ The cloud has limits. And arc itself is an abstraction with deliberate constrain
 - General Sketchyness that is Distributed Systems (Grey failtures)
 - API Gateway api limits are brutal so creating http routes is kinda slow (a lot of routes can take minutes)
 - Cloudwatch logs are not structured (so we search for `console.log` strings instead of querying structured data---inspectability is hugely important for a prod system)
+- Lambdas cannot execute for longer than 5 minutes 
+- Lambda functions require you to `npm install` to your project `node_modules` individually before deployment
 
 ## Arc Constraints ;)
 

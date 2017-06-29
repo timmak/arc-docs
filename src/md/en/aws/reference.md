@@ -12,3 +12,4 @@
 ## Also Reccomended
 
 - [AWS JavaScript SDK](http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/top-level-namespace.html)
+- [AWS Open Guides](https://github.com/open-guides/og-aws)
