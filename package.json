@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "pre-commit": [ "precommit" ],
   "scripts": {
     "update": "arc-modules-update",
     "precommit": "cd src/md && npm version patch",
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@smallwins/arc-create": "^1.0.19",
     "@smallwins/arc-deploy": "^1.0.2",
+    "pre-commit": "^1.2.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3"
   },
