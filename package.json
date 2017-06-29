@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "precommit":"cd src/md && npm version patch",
-    "create": "AWS_PROFILE=personal AWS_REGION=us-west-1 arc-create",
-    "deploy": "AWS_PROFILE=personal AWS_REGION=us-west-1 arc-deploy",
+    "create": "AWS_PROFILE=jsf AWS_REGION=us-west-2 arc-create",
+    "deploy": "AWS_PROFILE=jsf AWS_REGION=us-west-2 arc-deploy",
     "test": "tape test/* | tap-spec",
     "t": "tape test/md-slow-test.js | tap-spec"
   },
