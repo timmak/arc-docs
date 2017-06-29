@@ -3,10 +3,8 @@
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
-  "pre-commit": [ "precommit" ],
   "scripts": {
     "update": "arc-modules-update",
-    "precommit": "cd src/md && npm version patch",
     "create": "AWS_PROFILE=jsf AWS_REGION=us-west-2 arc-create",
     "deploy": "AWS_PROFILE=personal AWS_REGION=us-east-1 arc-deploy",
     "test": "tape test/* | tap-spec",
@@ -16,9 +14,6 @@
   "author": "Brian LeRoux <b@brian.io>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@smallwins/arc-create": "^1.0.19",
-    "@smallwins/arc-deploy": "^1.0.2",
-    "pre-commit": "^1.2.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3"
   },
