@@ -7,7 +7,7 @@
 
 Given the following `.arc` file:
 
-```
+```arc
 @app
 testapp
 

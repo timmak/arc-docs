@@ -4,7 +4,7 @@
 
 This `.arc` file defines some typical JSON outes:
 
-```
+```arc
 @app
 testapp
 

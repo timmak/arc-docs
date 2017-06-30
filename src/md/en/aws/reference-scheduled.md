@@ -4,17 +4,11 @@
 
 This `.arc` file defines some scheduled functions:
 
-```
+```arc
 @app
 testapp
 
 @scheduled
 daily-update-buddy rate(1 day)
-weekly-thingo rate()
-friyay-only cron()
+friyay-only cron(0 15 ? * FRI *)
 ```
-
-`@json` routes:
-
-- Must be either an HTTP `POST` or `GET`
-- Can have Express style URL parameters

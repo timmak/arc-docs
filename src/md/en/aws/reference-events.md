@@ -4,7 +4,7 @@
 
 This `.arc` file defines two `@events`:
 
-```
+```arc
 @app
 testapp
 
@@ -24,7 +24,20 @@ Which have two corosponding handlers:
 '-package.json
 ```
 
-Once deployed you can invoke these handlers:
+The code for the `hit-counter` handler:
+
+```javascript
+var arc = require('@smallwins/arc-prototype')
+
+function count(payload, callback) {
+  // save count to the db here
+  callback()
+}
+
+exports.handler = arc.events.subscribe(count)
+```
+
+Once deployed you can invoke these handlers from any other function defined under the `@app` namespace:
 
 ```javascript
 var arc = require('arc-prototype')
@@ -35,7 +48,7 @@ arc.events.publish({
 }, console.log)
 ```
 
-Yyou can even invoke Lambdas across apps:
+Yyou can even invoke Lambdas across `@app` namespaces:
 
 ```javascript
 var arc = require('arc-prototype')

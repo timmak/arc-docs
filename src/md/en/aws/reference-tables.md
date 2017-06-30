@@ -4,7 +4,7 @@
 
 This `.arc` file defines two `@tables`:
 
-```
+```arc
 @app
 testapp
 

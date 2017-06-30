@@ -1,6 +1,6 @@
 # @html example
 
-```
+```arc
 @app
 hello
 

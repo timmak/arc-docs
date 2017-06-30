@@ -28,7 +28,7 @@ module.exports = function render(filename) {
           <header>
             <nav>${md(nav)}</nav>
           </header>
-          <section>${md(body)}</section>
+          <section class=content>${md(body)}</section>
           <footer></footer>
         </section>
         </body>

@@ -1,6 +1,6 @@
 # Setup
 
-You'll need to a Amazon Web Services account and credentials setup on your development machine. 
+You'll need an Amazon Web Services account and credentials setup on your development machine. 
 
 AWS Credentials are listed in:
 

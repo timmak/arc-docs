@@ -4,7 +4,7 @@
 
 This `.arc` file defines some typical HTML routes:
 
-```
+```arc
 @app
 testapp
 

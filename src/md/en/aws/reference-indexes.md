@@ -4,7 +4,7 @@
 
 The following `.arc` file defines a DynamoDB table with two Global Secondary Indexes:
 
-```
+```arc
 @app
 testapp
 

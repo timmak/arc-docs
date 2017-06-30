@@ -1,6 +1,6 @@
 # @events example
 
-```bash
+```arc
 # .arc
 @app
 testapp

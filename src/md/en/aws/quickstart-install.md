@@ -22,7 +22,7 @@ Add the following to `package.json`:
 
 And then paste the following contents into the `.arc` file:
 
-```bash
+```arc
 @app
 testapp
 

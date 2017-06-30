@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "arc-sandbox",
     "update": "arc-modules-update",
     "create": "AWS_PROFILE=jsf AWS_REGION=us-west-2 arc-create",
-    "deploy": "AWS_PROFILE=personal AWS_REGION=us-east-1 arc-deploy",
+    "deploy": "AWS_PROFILE=personal AWS_REGION=us-west-1 arc-deploy",
     "test": "tape test/* | tap-spec",
     "t": "tape test/md-slow-test.js | tap-spec"
   },
@@ -20,7 +21,7 @@
   "dependencies": {
     "@smallwins/arc-create": "^1.0.32",
     "@smallwins/arc-modules": "^1.0.1",
-    "@smallwins/arc-sandbox": "^2.0.0",
+    "@smallwins/arc-sandbox": "^2.0.1",
     "marked": "^0.3.6",
     "run-parallel": "^1.1.6",
     "run-waterfall": "^1.1.3"

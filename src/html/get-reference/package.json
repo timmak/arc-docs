@@ -1,7 +1,7 @@
 {
   "name": "arc-www-get-reference",
   "dependencies": {
-    "@smallwins/arc-prototype": "^1.1.0",
-    "@smallwins/arc-www-md": "*"
+    "@smallwins/arc-prototype": "^1.1.3",
+    "@smallwins/arc-www-md": "^1.0.57"
   }
 }

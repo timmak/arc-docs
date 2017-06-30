@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  font-size: larger;
   background: #eaeaea;
+  color: #555559;
 }
 
 blockquote {
@@ -12,55 +12,75 @@ blockquote {
   margin: 0;
 }
 
-pre {
+.lang-arc {
+  background:blue;
+}
+
+pre code {
+  display:block;
   color:white;
   padding:17px;
   border-radius: 5px;
   background:black;
+  margin: 0 5% 0 0;
 }
 
-  header {
-      width:15%;
-        float:left;
-         
-        }
+.content {
+}
 
-        header ul {
-            margin: 10px 10px;
-              padding:0;
-
-            }
-
-            header ul ul {
-                margin:0px;
-              }
-
-              header ul li {
-                  list-style:none;  
-                    padding-left:10px;
+/*
+code {
+    background:#eaeaea;
+      border:1px solid #ccc;
+        border-radius: 5px;
+          font-family: Consolas,monaco,"Ubuntu Mono",courier,monospace!important;
+            font-size: .75rem;
+              line-height: .75rem;
+                white-space: normal;
+                  color: #00008B;
+                    padding: 3px;
                   }
+*/
+header {
+  width:15%;
+  float:left;
+}
 
+header ul {
+  margin: 10px 10px;
+  padding:0;
+}
 
-                  header ul ul li:last-child {
-                      margin-bottom: 10px;
-                    }
+header ul ul {
+  margin:0px;
+}
 
-                    header ul a {
-                        text-decoration: none;
-                          width: 100%;
-                            display: block;
-                             
-                            }
+header ul li {
+  list-style:none;  
+  padding-left:10px;
+}
 
-                            header ul a:hover {
-                                text-decoration: underline;
-                              }
+header ul ul li:last-child {
+  margin-bottom: 10px;
+}
 
-                              section>section {
-                                  margin-left:18%;
-                                }
+header ul a {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  color:blue;
+}
 
-                                section>section h1 {
-                                    font-size:7em;
-                                      margin:0;
-                                    }
+header ul a:hover {
+  text-decoration: underline;
+  color:black;
+}
+
+section>section {
+  margin-left:18%;
+}
+
+section>section h1 {
+  font-size:7em;
+  margin:20px 0 0 0;
+}
