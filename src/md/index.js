@@ -31,6 +31,7 @@ module.exports = function render(filename) {
           <section class=content>${md(body)}</section>
           <footer></footer>
         </section>
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js></script>
         </body>
         </html>
       `

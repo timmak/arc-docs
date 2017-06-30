@@ -1,0 +1,2 @@
+#!/bin/sh
+cd src/md/ && npm version patch && npm publish && cd ../../ && npm run update @smallwins/arc-www-md && npm start
