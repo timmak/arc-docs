@@ -22,6 +22,7 @@ blockquote {
 header {
   width:15%;
   float:left;
+  background:black;
 }
 
 header ul {
@@ -46,16 +47,17 @@ header ul a {
   text-decoration: none;
   width: 100%;
   display: block;
-  color:blue;
+  color:grey;
 }
 
 header ul a:hover {
-  text-decoration: underline;
-  color:black;
+  color: cyan;
 }
 
 section>section {
   margin-left:18%;
+  margin-right: 7%;
+  padding: 20px 0 0 0;
 }
 
 section>section h1 {

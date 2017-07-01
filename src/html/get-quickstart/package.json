@@ -2,6 +2,6 @@
   "name": "arc-www-get-quickstart",
   "dependencies": {
     "@smallwins/arc-prototype": "^1.1.3",
-    "@smallwins/arc-www-md": "^1.0.64"
+    "@smallwins/arc-www-md": "^1.0.66"
   }
 }
