@@ -4,24 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "arc-sandbox",
+    "start": "nodemon --watch src/md -e md ./node_modules/.bin/arc-sandbox",
     "iterate": "./scripts/iterates",
     "update": "arc-modules-update",
     "create": "AWS_PROFILE=jsf AWS_REGION=us-west-2 arc-create",
     "deploy": "AWS_PROFILE=personal AWS_REGION=us-west-1 arc-deploy",
     "test": "tape test/* | tap-spec",
-    "t": "tape test/md-slow-test.js | tap-spec"
+    "t": "tape test/md-slow-test.js | tap-spec",
+    "install": "arc-modules-install",
+    "link": "arc-modules-link",
+    "uninstall": "arc-modules-uninstall"
   },
   "keywords": [],
   "author": "Brian LeRoux <b@brian.io>",
   "license": "Apache-2.0",
   "devDependencies": {
+    "nodemon": "^1.11.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3"
   },
   "dependencies": {
     "@smallwins/arc-create": "^1.0.32",
-    "@smallwins/arc-modules": "^1.0.1",
+    "@smallwins/arc-modules": "^2.0.0",
     "@smallwins/arc-sandbox": "^2.0.1",
     "marked": "^0.3.6",
     "run-parallel": "^1.1.6",

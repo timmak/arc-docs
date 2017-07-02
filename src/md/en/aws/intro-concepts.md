@@ -53,7 +53,7 @@ The `.arc` format follows a few simple rules:
 
 This is a complete `.arc` file example. 
 
-```
+```arc
 # .arc
 @app
 hello

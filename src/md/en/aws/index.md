@@ -1,4 +1,4 @@
-# architect
+# &#x1f329; architect
 
 > provision and deploy cloud architecture as text
 
@@ -29,7 +29,7 @@ index.js
 
 Running `npm run create` generates cloud function code:
 
-```
+```bash
 /
 |-src
 | |-html
@@ -45,7 +45,7 @@ Running `npm run create` generates cloud function code:
 
 ```
 
-And `npm run deploy` ships this code to the &#x2601;.
+And `npm run deploy` ships this code to the cloud. <span class=cloud>&#x1f329;</span>
 
 ### Infra Primatives Currently Supported
 

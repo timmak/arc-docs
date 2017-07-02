@@ -4,13 +4,13 @@ You'll need an Amazon Web Services account and credentials setup on your develop
 
 AWS Credentials are listed in:
 
-```
+```bash
 ~/.aws/credentials
 ```
 
 If that file doesn't exist, create it, and add something like the following:
 
-```
+```bash
 [work]
 aws_access_key_id=xxx
 aws_secret_access_key=xxx

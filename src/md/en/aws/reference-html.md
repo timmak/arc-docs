@@ -24,7 +24,7 @@ post /contact
 
 The `.arc` above generates the following functions:
 
-```
+```bash
 /
 |-html
 | |-get-index/
@@ -96,7 +96,7 @@ function handler(req, res) {
   }, 
   function _email(err) {
     res({
-      location: \`/contact?success=${err? 'yep' : 'ruhroh'}\`
+      location: `/contact?success=${err? 'yep' : 'ruhroh'}`
     })
   })
 }

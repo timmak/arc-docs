@@ -10,7 +10,7 @@ npm install @smallwins/arc-create @smallwins/arc-deploy --save
 touch .arc
 ```
 
-Add the following to `package.json`:
+Add the following to `scripts` in the `package.json`:
 
 ```javascript
 // don't forget to setup your AWS_PROFILE

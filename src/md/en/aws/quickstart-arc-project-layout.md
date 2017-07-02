@@ -1,6 +1,6 @@
 # Project Layout
 
-`arcitect` projects make use of `npm run` scripts to read and execute workflows against a `.arc` file. 
+`architect` projects make use of `npm run` scripts to read and execute workflows against a `.arc` file. 
 
 - `arc-create` creates lambda code locally in `./src` for each respective `.arc` declaration
 - `arc-deploy` deploys lambda code defined in `.arc` to `staging` and, with an additional manual step, `production`
@@ -23,7 +23,7 @@ get /posts
 
 Running `npm run create` creates the following code:
 
-```
+```bash
 /
 |-src
 | |-events
