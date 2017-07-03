@@ -21,6 +21,7 @@ module.exports = function render(filename) {
         <html>
         <head>
           <title>${title}</title>
+          <meta name=viewport content=width=device-width,initial-scale=1>
           <style type=text/css>${style}</style>
         </head>
         <body>
