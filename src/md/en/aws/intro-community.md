@@ -8,11 +8,11 @@ Code of Conduct
 
 - `arc-create` creates cloud infrastructure from a `.arc` file
 - `arc-deploy` deploys cloud functions from a `.arc` file
-- `arc-prototype` [RENAME: `arc-functions`] cloud function handlers
-- `arc-sandbox` [IN PROGRESS] run a `.arc` file offline, locally and in memory
+- `arc-functions` author cloud function signatures
+- `arc-sandbox` run an `.arc` file offline, locally and in memory
+- `arc-modules` proxy `npm install`, `uninstall`, `link` and `update` to all `.arc` defined cloud functions
 - `arc-parser` parses `.arc` text into a plain JavaScript `Object`
-- `arc-docs` [IN PROGESS] this very website
-- `arc-modules` proxy `npm` commands to `.arc` functions (`install`, `uninstall`, `link` and `update`)
+- `arc-docs` this very website
 
 ## Get Help
 

@@ -1,6 +1,7 @@
 # Reference
 
-- [npm run scripts](/reference/npm-run-scripts)
+- [npm scripts](/reference/npm-run-scripts)
+- [Functions](/reference/functions)
 - [@app](/reference/app)
 - [@html](/reference/html)
 - [@json](/reference/json)
