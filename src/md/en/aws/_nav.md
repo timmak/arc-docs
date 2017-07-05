@@ -30,7 +30,7 @@
   - [&#9758; Share deps](/guides/shared-deps)
   - [&#9758; Persist data](/guides/data)
   - [&#9758; Work offline](/guides/offline)
-  - [&#9758; Custom domains](/guides/custom-domains)
+  - [&#9758; Custom DNS](/guides/custom-dns)
   - [&#9758; View logs](/guides/logging)
   - [&#9758; Author tests](/guides/testing)
   - [&#9758; Automate releases](/guides/releases)
