@@ -7,11 +7,11 @@
 - Delivery isolated from deployment
 - Extensible and flexibile systems
 
-We'll revisit these. But first lets better understand the problems that need solving.
+We'll revisit these. First lets better understand the problems `architect` aims to solve.
 
 ## New Tech for New Problems
 
-With the cloud function benefits comes new and unique problems.
+With all the benefits of cloud functions comes new and unique problems.
 
 - Configuration tooling was designed for the last generation of metaphors (and lags behind the releases of new functionality)
 - AWS is massive and overwhelming with many similar, but not the same, products
@@ -82,14 +82,14 @@ likes
 
 The `.arc` format is terse, easy to read and quickly learnable to author. That intentional simplicity unlocks formerly complex infrastructure provisioning, deployment and orchestration tasks.
 
-## Practice: Informed by Principle 
+## Practices
 
-Above we defined the following design principles:
+`architect` design principles:
 
 - **Architecture as text** `.arc` manifest file defines achitecture element in the plainest text possible
 - **Repeatable and consistent builds** `arc-create` only creates, it never destroys, and skips if the thing it was to generate already exists
-- **Delivery isolated from deployment** `arc-deploy` treats `staging` and `production` as first class concepts
-- **Extensible and flexibile systems** `arc-parser` is open, and `architect` tooling ignores @sections it does not know, therefore use `.arc` with your own npm scripts
+- **Delivery isolated from deployment** `arc-sandbox` for working locally while `arc-deploy` treats `staging` and `production` as first class concepts
+- **Extensible and flexibile systems** `arc-parser` is open, and `architect` tooling ignores `@sections` it does not know, therefore use `.arc` with your own npm scripts
 
 ## Next Steps
 

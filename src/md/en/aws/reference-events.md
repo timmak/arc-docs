@@ -13,9 +13,9 @@ hit-counter
 likes
 ```
 
-Which have two corosponding handlers:
+Which generates the corosponding code:
 
-```
+```bash
 /
 |-events
 | |-hit-counter/
@@ -24,38 +24,13 @@ Which have two corosponding handlers:
 '-package.json
 ```
 
-The code for the `hit-counter` handler:
+And the following deployment lambdas:
 
-```javascript
-var arc = require('@smallwins/arc-prototype')
+- `testapp-staging-hit-counter`
+- `testapp-production-hit-counter`
+- `testapp-staging-likes`
+- `testapp-production-likes`
 
-function count(payload, callback) {
-  // save count to the db here
-  callback()
-}
+## Next Steps
 
-exports.handler = arc.events.subscribe(count)
-```
-
-Once deployed you can invoke these handlers from any other function defined under the `@app` namespace:
-
-```javascript
-var arc = require('arc-prototype')
-
-arc.events.publish({
-  name: 'hit-counter',
-  payload: {hits: 1},
-}, console.log)
-```
-
-Yyou can even invoke Lambdas across `@app` namespaces:
-
-```javascript
-var arc = require('arc-prototype')
-
-arc.events.publish({
-  app: 'some-other-app',
-  name: 'hit-counter',
-  payload: {hits: 2},
-}, console.log)
-```
+- Check out [`@scheduled`](/reference/scheduled)

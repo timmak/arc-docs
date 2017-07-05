@@ -13,4 +13,6 @@
 
 - `arc-docs` translations!
 - `arc-dns` to paper over the API Gateway, AWS Certificate Manager and Route53 setup
+- Add `@static` to `.arc` for CloudFront of S3 static assets
+- Syntax highlighting for `.arc` in popular editors and Prism so this site looks nicer
 - Ports to other clouds

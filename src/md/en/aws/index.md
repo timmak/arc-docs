@@ -9,7 +9,7 @@ Currently supporting Amazon Web Services:
 - DynamoDB
 - SNS
 
-Everything you do with `architect` starts with a `.arc` file:
+Everything you do with `architect` starts with an `.arc` file:
 
 ```arc
 # this is an .arc file
@@ -56,7 +56,7 @@ And `npm run deploy` ships this code to the cloud. <span class=cloud>&#x1f329;</
 
 ### Workflows Currently Supported
 
-- **Create infra** from a `.arc` manifest (makes deletion and re-creation of infrastructure trivial; change regions in minutes)
+- **Create infra** from an `.arc` manifest (makes deletion and re-creation of infrastructure trivial; change regions in minutes)
 - **Work locally** while completely offline [IN PROGRESS] (including in memory dynamo instance so its super fast--h/t dynalite!)
 - **Deploy in seconds** (setup with `staging` and `production` using a proper environment variable `NODE_ENV`)
  
@@ -64,4 +64,5 @@ And `npm run deploy` ships this code to the cloud. <span class=cloud>&#x1f329;</
 
 - [Read the introduction](/intro)
 - [Follow the quickstart](/quickstart)
+- [Read the reference](/reference)
 - [Copy/paste examples](/examples)

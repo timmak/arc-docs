@@ -1,8 +1,11 @@
 # Guides
 
-Next steps:
-
-- [Setup custom domains](/guides/custom-domains)
-- [Capture and view logs](/guides/logging)
-- [Synchronize dependencies](/guides/deps)
+- [Share deps](/guides/shared-deps)
+- [Persist data](/guides/data)
+- [Work offline](/guides/offline)
+- [Custom domains](/guides/custom-domains)
+- [View logs](/guides/logging)
+- [Author tests](/guides/testing)
 - [Automate releases](/guides/releases)
+- [Sync deps](/guides/deps)
+- [Extend .arc](/guides/extend)

@@ -32,13 +32,13 @@ Qualities of the `@tables` syntax to note:
 Also worth noting, `.arc` creates isolated tables for `staging` and `production`. The example `.arc` above would generate:
 
 - `people-staging`
-- `popele-production`
+- `people-production`
 - `cats-staging`
 - `cats-production`
 
 Function code is also be generated for `people` triggers defined:
 
-```
+```bash
 /
 |-tables
 | |-people-insert/
@@ -48,21 +48,6 @@ Function code is also be generated for `people` triggers defined:
 '-package.json
 ```
 
-The `people-update` trigger function looks something like this:
-
-```javascript
-var arc = require('@smallwins/arc')
-
-function handler(record, callback) {
-  console.log(JSON.stringify(record, null, 2))
-  callback()
-}
-
-exports.handler = arc.tables.update(handler)
-```
-
-DynamoDB is a powerful database. There is a great deal more to learn to take full advantage of it. Dig into [Amazon's DynamoDB documentation](https://aws.amazon.com/documentation/dynamodb/) to build out your apps data layer.
-
 ## Next Steps
 
-- Check out [indexes](/reference/indexes).
+- Check out [`@indexes`](/reference/indexes).

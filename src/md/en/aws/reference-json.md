@@ -2,7 +2,7 @@
 
 > `@json` section defines HTTP routes that return `application/json` content.
 
-This `.arc` file defines some typical JSON outes:
+This `.arc` file defines some typical JSON routes:
 
 ```arc
 @app
@@ -23,7 +23,7 @@ post /notes/:noteID/delete # delete a note
 
 The `.arc` above generates the following REST-ish functions:
 
-```
+```bash
 /
 |-html
 | |-get-notes/
@@ -35,27 +35,11 @@ The `.arc` above generates the following REST-ish functions:
 '-package.json
 ```
 
-`@json` routes look something like this:
+The route `/notes/:noteID` corosponding handler deliberately looks a bit weird with the triple `000` so you can quickly identify URL params from URL parts. The deployment lambdas targets follow suite:
 
-```javascript
-var arc = require('@smallwins/arc-prototype')
+- `testapp-staging-get-notes-000noteID`
+- `testapp-production-get-notes-000noteID`
 
-function handler(req, res) {
-  res({
-    json: {noteID:1, body:'hi'}
-  })
-}
+## Next Steps
 
-exports.handler = arc.json.get(handler)
-```
-
-Things to understand:
-
-- `arc.json.get` and `arc.json.post` accept one or more functions that follow Express style middleware ssignature: `(req, res, next)=>`
-- `req` is a plain object with `path`, `method`, `query`, `params`, `body` keys
-- `res` is a function that must be invoked with either `json` or `location` and optionally a `session` key
-- `next` is an optional function to continue middleware execution
-
-## Sessions
-
-By default, all routes are session enabled. If you wish to disable sessions remove `SESSION_TABLE_NAME` env variable from the deployment config in the AWS Console.
+- Check out [`@events`](/reference/events)

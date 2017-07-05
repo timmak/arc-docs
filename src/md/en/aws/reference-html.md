@@ -41,3 +41,6 @@ The route `/pages/:dateID` corosponding handler deliberately looks a bit weird w
 - `testapp-staging-get-pages-000dateID`
 - `testapp-production-get-pages-000dateID`
 
+## Next Steps
+
+- Check out [`@json`](/reference/json)
