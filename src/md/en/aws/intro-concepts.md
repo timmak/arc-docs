@@ -74,13 +74,36 @@ daily-affirmation rate(1 day)
 @tables
 likes
   likeID *String
+  update Lambda
 
 @indexes
 likes
   date *String
 ```
 
-The `.arc` format is terse, easy to read and quickly learnable to author. That intentional simplicity unlocks formerly complex infrastructure provisioning, deployment and orchestration tasks.
+Running `npm run create` in the same directory as the `.arc` file above generates the following function code:
+
+```bash
+/
+|-src
+| |-html
+| | |-get-index/
+| | '-get-likes/
+| |-json
+| | '-get-likes/
+| |-events
+| | '-hit-counter/
+| |-scheduled
+| | '-daily-affirmation/
+| '-tables
+|   '-likes-update/
+|-.arc
+'-package.json
+```
+
+The code was also immediately deployed to the cloud in isolated `staging` and `production` environments. `architect` ships additional `npm run` workflows for deployment, working offline and dependency management.
+
+The `.arc` format is terse, easy to read and quickly learnable to author. That intentionality expressed in an `.arc` file unlocks formerly complex infrastructure provisioning, deployment and orchestration tasks.
 
 ## Practices
 

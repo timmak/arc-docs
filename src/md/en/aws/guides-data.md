@@ -17,7 +17,12 @@ notes
   accountID *String
 ```
 
-Let's create a database client to do the usual persistence methods.
+NOTES:
+
+- further seperating reads from writes is a decent idea
+- isolating stage data from prod data is not a horrible idea
+
+    Let's create a database client to do the usual persistence methods.
 
 Create a couple of modules `accounts` and `notes` to represent their corosponding tables:
 
