@@ -1,6 +1,6 @@
 {
   "name": "@smallwins/arc-www-md",
-  "version": "1.0.86",
+  "version": "1.0.88",
   "main": "index",
   "dependencies": {
     "marked": "^0.3.6",

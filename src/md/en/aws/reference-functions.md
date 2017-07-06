@@ -229,7 +229,7 @@ arc.events.publish({
 
 ## <a id=arc.tables.insert href=#arc.tables.insert>`arc.tables.insert`</a>
 
-> Respond to data being inserted into a DyanmoDB table
+> Respond to data being inserted into a DynamoDB table
 
 ```javascript
 var arc = require('@architect/functions')
@@ -246,7 +246,7 @@ exports.handler = arc.tables.insert(handler)
 
 ## <a id=arc.tables.update href=#arc.tables.update>`arc.tables.update`</a>
 
-> Respond to data being updated in a DyanmoDB table
+> Respond to data being updated in a DynamoDB table
 
 ```javascript
 var arc = require('@architect/functions')
@@ -262,7 +262,7 @@ exports.handler = arc.tables.update(handler)
 
 ## <a id=arc.tables.destroy href=#arc.tables.destroy>`arc.tables.destroy`</a>
 
-> Respond to data being removed from a DyanmoDB table
+> Respond to data being removed from a DynamoDB table
 
 ```javascript
 var arc = require('@architect/functions')
@@ -275,3 +275,7 @@ function handler(record, callback) {
 exports.handler = arc.tables.destroy(handler)
 ```
 ---
+
+## Next Steps
+
+Read about [`@app`](/reference/app) namespace defined in an `.arc` file.

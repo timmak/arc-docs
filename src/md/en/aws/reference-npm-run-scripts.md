@@ -2,10 +2,10 @@
 
 > The `npm run` scripts execute common development workflows against an `.arc` file.
 
-- <a href=#arc-create>`@architect/create`</a>
-- <a href=#arc-deploy>`@architect/deploy`</a>
-- <a href=#arc-sandbox>`@architect/sandbox`</a>
-- <a href=#arc-modules>`@architect/modules`</a>
+- <a href=#arc-create>`@architect/create`</a> creates code and corosponding cloud infrastructure
+- <a href=#arc-deploy>`@architect/deploy`</a> deploys cloud functions
+- <a href=#arc-sandbox>`@architect/sandbox`</a> runs cloud function code locally, offline and completely in memory
+- <a href=#arc-modules>`@architect/modules`</a> manage common npm tasks across all cloud functions
 
 ### Setup
 
@@ -108,3 +108,7 @@ npm run update lodash
 ```
 
 ---
+
+## Next Steps
+
+Learn about authoring `.arc` defined cloud functions with the [`@architect/functions`](/reference/functions) namespace.

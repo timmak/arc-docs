@@ -1,6 +1,6 @@
 # Concepts
 
-`architect` follows a few design principles:
+`architect` guiding design principles:
 
 - Architecture as text
 - Repeatable and consistent builds
@@ -84,12 +84,12 @@ The `.arc` format is terse, easy to read and quickly learnable to author. That i
 
 ## Practices
 
-`architect` design principles:
+Revisiting the `architect` design principles:
 
 - **Architecture as text** `.arc` manifest file defines achitecture element in the plainest text possible
 - **Repeatable and consistent builds** `arc-create` only creates, it never destroys, and skips if the thing it was to generate already exists
-- **Delivery isolated from deployment** `arc-sandbox` for working locally while `arc-deploy` treats `staging` and `production` as first class concepts
-- **Extensible and flexibile systems** `arc-parser` is open, and `architect` tooling ignores `@sections` it does not know, therefore use `.arc` with your own npm scripts
+- **Delivery isolated from deployment** `arc-sandbox` allows you to working locally offline from the cloud; meanwhile `arc-deploy` treats `staging` and `production` as first class concepts
+- **Extensible and flexibile systems** `arc-parser` is open, and `architect` tooling ignores `@sections` it does not know, therefore use `.arc` with your own npm scripts; `arc-modules` lets you act on all `.arc` defined modules with common `npm` commands
 
 ## Next Steps
 

@@ -46,7 +46,14 @@ Add the following to `src/layout/index.js`:
 ```javascript
 // index.js
 module.exports = function layout(body) {
-  return `<html><body><h1>layout</h1>${body}</body></html>`
+  return `
+  <html>
+  <body>
+  <h1>layout</h1>
+  ${body}
+  </body>
+  </html>
+  `
 }
 ```
 
@@ -111,3 +118,6 @@ If it looks good: ship it!
 ARC_DEPLOY=production npm run deploy
 ```
 
+## Next Steps
+
+- Read about [persisting data](/guides/data)
