@@ -47,7 +47,7 @@ Running `npm run create` generates cloud function code:
 
 And `npm run deploy` ships this code to the cloud. <span class=cloud>&#x1f329;</span>
 
-### Infra Primatives Currently Supported
+### Infra Primitives Currently Supported
 
 - HTTP route handler functions for `application/json`, `text/html`, `text/css` and `text/javascript`
 - Subscribe functions to events (and publish events from any other function)
