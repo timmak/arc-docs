@@ -8,7 +8,6 @@
     "deploy": "AWS_PROFILE=jsf AWS_REGION=us-west-2 arc-deploy",
     "test": "tape test/* | tap-spec"
   },
-  "keywords": [],
   "author": "Brian LeRoux <b@brian.io>",
   "license": "Apache-2.0",
   "devDependencies": {
@@ -17,7 +16,7 @@
     "tape": "^4.6.3"
   },
   "dependencies": {
-    "@architect/workflows": "*",
+    "@architect/workflows": "^1.0.0",
     "marked": "^0.3.6",
     "run-parallel": "^1.1.6",
     "run-waterfall": "^1.1.3"
