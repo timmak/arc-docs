@@ -1,6 +1,6 @@
 {
   "name": "@architect/docs",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "https://arc.codes",
   "scripts": {
     "start": "nodemon --watch src/md -e md ./node_modules/.bin/arc-sandbox",
