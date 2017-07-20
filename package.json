@@ -5,6 +5,8 @@
   "scripts": {
     "start": "nodemon --watch src/md -e md ./node_modules/.bin/arc-sandbox",
     "deploy": "AWS_PROFILE=jsf AWS_REGION=us-west-2 arc-deploy",
+    "link": "arc-modules-link",
+    "i": "arc-modules-install",
     "test": "tape test/* | tap-spec"
   },
   "author": "Brian LeRoux <b@brian.io>",
