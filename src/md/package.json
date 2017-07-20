@@ -1,5 +1,5 @@
 {
-  "name": "@architect/docs-md",
+  "name": "@architect/docs",
   "version": "1.0.0",
   "main": "index",
   "dependencies": {

@@ -1,7 +1,7 @@
 {
   "name": "arc-www-get-guides-000guideID",
   "dependencies": {
-    "@smallwins/arc-prototype": "^1.1.3",
-    "@smallwins/arc-www-md": "^1.0.90"
+    "@architect/functions": "^1.0.0",
+    "@architect/docs": "^1.0.0"
   }
 }

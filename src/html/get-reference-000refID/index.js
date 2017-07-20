@@ -1,5 +1,5 @@
-var arc = require('@smallwins/arc-prototype')
-var render = require('@smallwins/arc-www-md')
+var arc = require('@architect/functions')
+var render = require('@architect/docs')
 
 function index(req, res) {
   res({
