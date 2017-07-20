@@ -5,6 +5,12 @@ var exists = fs.existsSync
 var join = require('path').join
 var ledger = {}
 
+/**
+ * slowest possible impl
+ *   but it was still fast enough
+ *     caching helped too
+ *       think the next version should be arc middleware
+ */
 module.exports = function render(filename) {
 
   var cached = ledger.hasOwnProperty(filename)
