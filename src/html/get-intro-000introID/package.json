@@ -1,7 +1,0 @@
-{
-  "name": "arc-www-get-intro-000introID",
-  "dependencies": {
-    "@architect/docs": "^1.0.0",
-    "@architect/functions": "^1.0.3"
-  }
-}

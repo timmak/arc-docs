@@ -1,5 +1,7 @@
 var fs = require('fs')
 var md = require('marked')
+var read = fs.readFileSync
+var exists = fs.existsSync
 var join = require('path').join
 var ledger = {}
 
@@ -7,15 +9,15 @@ module.exports = function render(filename) {
 
   var cached = ledger.hasOwnProperty(filename)
   if (!cached) {
+    // TODO figure out lang and platform switcher logic
     var path = join(__dirname, 'en', 'aws', `${filename}.md`)
 
-    var exists = fs.existsSync(path)
-    if (exists) {
+    if (exists(path)) {
 
       var title = 'arc'
-      var style = fs.readFileSync(join(__dirname, 'style.css')).toString()
-      var nav = fs.readFileSync(join(__dirname, 'en', 'aws', '_nav.md')).toString()
-      var body = fs.readFileSync(path).toString()
+      var style = read(join(__dirname, 'style.css')).toString()
+      var nav = read(join(__dirname, 'en', 'aws', '_nav.md')).toString()
+      var body = read(path).toString()
 
       ledger[filename] = `
         <html>
@@ -42,10 +44,4 @@ module.exports = function render(filename) {
     }
   }
   return ledger[filename] 
-}
-
-function render(req, res) {
-  var filename = req.path.replace('/', '-')
-  var html = _render(filename)
-  res({html})
 }

@@ -1,5 +1,5 @@
 var test = require('tape')
-var layout = require('../src/md')
+var layout = require('.')
 
 test('env', t=> {
   t.plan(1)
