@@ -1,8 +1,7 @@
 {
   "name": "@architect/docs",
   "version": "1.0.10",
-  "description": "",
-  "main": "index.js",
+  "description": "https://arc.codes",
   "scripts": {
     "start": "nodemon --watch src/md -e md ./node_modules/.bin/arc-sandbox",
     "deploy": "AWS_PROFILE=jsf AWS_REGION=us-west-2 arc-deploy",
@@ -10,15 +9,15 @@
   },
   "author": "Brian LeRoux <b@brian.io>",
   "license": "Apache-2.0",
-  "devDependencies": {
-    "nodemon": "^1.11.0",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.7.0"
-  },
   "dependencies": {
     "@architect/workflows": "^1.0.0",
     "marked": "^0.3.6",
     "run-parallel": "^1.1.6",
     "run-waterfall": "^1.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.7.0"
   }
 }
