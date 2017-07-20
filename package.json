@@ -5,14 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --watch src/md -e md ./node_modules/.bin/arc-sandbox",
-    "iterate": "./scripts/iterates",
-    "update": "arc-modules-update",
-    "create": "AWS_PROFILE=jsf AWS_REGION=us-west-2 arc-create",
     "deploy": "AWS_PROFILE=jsf AWS_REGION=us-west-2 arc-deploy",
-    "test": "tape test/* | tap-spec",
-    "i": "arc-modules-install",
-    "link": "arc-modules-link",
-    "uninstall": "arc-modules-uninstall"
+    "test": "tape test/* | tap-spec"
   },
   "keywords": [],
   "author": "Brian LeRoux <b@brian.io>",
