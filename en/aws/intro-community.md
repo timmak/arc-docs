@@ -6,13 +6,18 @@ Code of Conduct
 
 `architect` repos (and issue trackers) can be found here:
 
-- `arc-create` creates cloud infrastructure from a `.arc` file
-- `arc-deploy` deploys cloud functions from a `.arc` file
-- `arc-functions` author cloud function signatures
-- `arc-sandbox` run an `.arc` file offline, locally and in memory
-- `arc-modules` proxy `npm install`, `uninstall`, `link` and `update` to all `.arc` defined cloud functions
-- `arc-parser` parses `.arc` text into a plain JavaScript `Object`
-- `arc-docs` this very website
+- `arc-workflows` npm scripts that for `.arc` generated infra and code
+- `arc-docs` docs in markdown
+- `arc.codes` this very website (build with `.arc` of course)
+- `arc-parser` parses `.arc` text into a plain JS Object
+
+| github                                                        | npm                                                                          | codeship                                                                                                                                                                                 |
+| ------------------------------------------------------------- |:----------------------------------------------------------------------------:| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| [`arc-functions`](https://github.com/arc-repos/arc-functions) | [`@architect/functions`](https://www.npmjs.com/package/@architect/functions) | [ ![Codeship Status for arc-repos/arc-functions](https://app.codeship.com/projects/6f683560-4fab-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234122) |
+| [`arc-functions`](https://github.com/arc-repos/arc-functions) | [`@architect/functions`](https://www.npmjs.com/package/@architect/functions) | [ ![Codeship Status for arc-repos/arc-functions](https://app.codeship.com/projects/6f683560-4fab-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234122) |
+| [`arc-functions`](https://github.com/arc-repos/arc-functions) | [`@architect/functions`](https://www.npmjs.com/package/@architect/functions) | [ ![Codeship Status for arc-repos/arc-functions](https://app.codeship.com/projects/6f683560-4fab-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234122) |
+| [`arc-functions`](https://github.com/arc-repos/arc-functions) | [`@architect/functions`](https://www.npmjs.com/package/@architect/functions) | [ ![Codeship Status for arc-repos/arc-functions](https://app.codeship.com/projects/6f683560-4fab-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234122) |
+| [`arc-functions`](https://github.com/arc-repos/arc-functions) | [`@architect/functions`](https://www.npmjs.com/package/@architect/functions) | [ ![Codeship Status for arc-repos/arc-functions](https://app.codeship.com/projects/6f683560-4fab-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234122) |
 
 ## Get Help
 
