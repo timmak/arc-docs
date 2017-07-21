@@ -16,7 +16,7 @@ Repos (and issue trackers) and distributions can be found here:
 
 ## Get Help
 
-- Come chat w us in the JS Foundation Slack
+- Join us in [Slack](https://join.slack.com/t/architecture-as-text/shared_invite/MjE2MzU4Nzg0NTY1LTE1MDA2NzgyMzYtODE2NzRkOGRmYw)
 - Use the issue trackers above
 
 ## Helping Out
