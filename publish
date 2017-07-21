@@ -6,7 +6,5 @@ if [ $locally = $remotely ]; then
   echo 'version the same so not npm publishing'
   exit 0
 else
-  echo $locally
-  echo $remotely
   npm publish
 fi

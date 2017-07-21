@@ -2,6 +2,8 @@
 
 > provision and deploy cloud architecture as text
 
+Event driven programming with cloud functions.
+
 Currently supporting Amazon Web Services:
 
 - Lambda
