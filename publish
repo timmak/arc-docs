@@ -1,0 +1,12 @@
+#!/bin/sh
+remotely=`npm info @architect/docs@latest dist-tags.latest`
+locally=`node -e 'console.log(require("./package.json").version)'`
+
+if [ $locally = $remotely ]; then
+  echo 'version the same so not npm publishing'
+  exit 0
+else
+  echo $locally
+  echo $remotely
+  npm publish
+fi
