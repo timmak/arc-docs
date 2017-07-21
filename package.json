@@ -3,7 +3,8 @@
   "version": "30.0.1",
   "main": "index",
   "scripts": {
-    "test": "tape test.js | tap-spec"
+    "test": "tape test.js | tap-spec",
+    "publish": "./publish"
   },
   "dependencies": {
     "marked": "^0.3.6"
