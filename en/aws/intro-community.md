@@ -4,20 +4,15 @@ Code of Conduct
 
 ## Get the Code
 
-`architect` repos (and issue trackers) can be found here:
-
-- `arc-workflows` npm scripts that for `.arc` generated infra and code
-- `arc-docs` docs in markdown
-- `arc.codes` this very website (build with `.arc` of course)
-- `arc-parser` parses `.arc` text into a plain JS Object
+Repos (and issue trackers) and distributions can be found here:
 
 | github                                                        | npm                                                                          | codeship                                                                                                                                                                                 |
 | ------------------------------------------------------------- |:----------------------------------------------------------------------------:| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | [`arc-functions`](https://github.com/arc-repos/arc-functions) | [`@architect/functions`](https://www.npmjs.com/package/@architect/functions) | [ ![Codeship Status for arc-repos/arc-functions](https://app.codeship.com/projects/6f683560-4fab-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234122) |
-| [`arc-functions`](https://github.com/arc-repos/arc-functions) | [`@architect/functions`](https://www.npmjs.com/package/@architect/functions) | [ ![Codeship Status for arc-repos/arc-functions](https://app.codeship.com/projects/6f683560-4fab-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234122) |
-| [`arc-functions`](https://github.com/arc-repos/arc-functions) | [`@architect/functions`](https://www.npmjs.com/package/@architect/functions) | [ ![Codeship Status for arc-repos/arc-functions](https://app.codeship.com/projects/6f683560-4fab-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234122) |
-| [`arc-functions`](https://github.com/arc-repos/arc-functions) | [`@architect/functions`](https://www.npmjs.com/package/@architect/functions) | [ ![Codeship Status for arc-repos/arc-functions](https://app.codeship.com/projects/6f683560-4fab-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234122) |
-| [`arc-functions`](https://github.com/arc-repos/arc-functions) | [`@architect/functions`](https://www.npmjs.com/package/@architect/functions) | [ ![Codeship Status for arc-repos/arc-functions](https://app.codeship.com/projects/6f683560-4fab-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234122) |
+| [`arc-workflows`](https://github.com/arc-repos/arc-workflows) | [`@architect/workflows`](https://www.npmjs.com/package/@architect/workflows) | [ ![Codeship Status for arc-repos/arc-workflows](https://app.codeship.com/projects/171c66d0-4fa3-0135-c228-1654ec891f79/status?branch=master)](https://app.codeship.com/projects/234104) |
+| [`arc-parser`](https://github.com/arc-repos/arc-parser) | [`@architect/parser`](https://www.npmjs.com/package/@architect/parser) | [ ![Codeship Status for arc-repos/arc-parser](https://app.codeship.com/projects/8ac91c80-4f9d-0135-36b3-22bcd0c3040e/status?branch=master)](https://app.codeship.com/projects/234098) |
+| [`arc-docs`](https://github.com/arc-repos/arc-docs) | [`@architect/docs`](https://www.npmjs.com/package/@architect/docs) | [ ![Codeship Status for arc-repos/arc-docs](https://app.codeship.com/projects/1171c2b0-4fb7-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234129) |
+| [`arc.codes`](https://github.com/arc-repos/arc.codes) | &nbsp; | [ ![Codeship Status for arc-repos/arc.codes](https://app.codeship.com/projects/69a79dc0-4fd3-0135-6f18-062897f7455f/status?branch=master)](https://app.codeship.com/projects/234163) |
 
 ## Get Help
 
