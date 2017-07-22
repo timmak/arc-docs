@@ -1,6 +1,6 @@
 {
   "name": "@architect/docs",
-  "version": "30.0.9",
+  "version": "30.0.10",
   "main": "index",
   "scripts": {
     "test": "tape test.js | tap-spec",
