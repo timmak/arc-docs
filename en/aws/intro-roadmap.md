@@ -4,10 +4,9 @@
 
 ## Nearterm
 
-- `arc-workflows` expose support structured http status codes and errors
-- `arc-sandbox` error traps
+- `arc-sandbox` error traps for 302, 403, 404 and 500
 - `arc-env` infra env var and configuration management
-- `arc-functions`, `arc-workflows` add `text/html` and `text/css` route handlers
+- `text/javascript` and `text/css` route handlers
 - `arc-docs`: examples and guides
 
 ## Ongoing and Future Scope

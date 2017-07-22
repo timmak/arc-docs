@@ -42,6 +42,7 @@ Things to understand:
   - `html` a string value containing html content
   - or `location` with a url value (a string starting w `/`)
   - `session` (optional) a plain `Object`
+  - `status` (optional) HTTP error statusCode responses: `500`, `403` or `404`
 - `next` is an optional function to continue middleware execution 
 
 Here's an example using `session` and `location`. First we render a form.
@@ -153,7 +154,11 @@ Things to understand:
 
 - `arc.json.get` and `arc.json.post` accept one or more functions that follow Express style middleware ssignature: `(req, res, next)=>`
 - `req` is a plain object with `path`, `method`, `query`, `params`, `body` keys
-- `res` is a function that must be invoked with either `json` or `location` and optionally a `session` key
+- `res` is a function that must be invoked with named params: 
+  - `json` a plain `Object` value
+  - or `location` with a url value (a string starting w `/`)
+  - `session` (optional) a plain `Object`
+  - `status` (optional) HTTP error statusCode responses: `500`, `403` or `404`
 - `next` is an optional function to continue middleware execution
 
 ### Sessions
