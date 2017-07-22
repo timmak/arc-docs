@@ -44,4 +44,3 @@ Time to celebrate! &#x26c5;
 ## Next steps
 
 - Read up on how lambda functions are authored in the [reference](/reference)
-- Skip the reference and check out code [examples](/examples)

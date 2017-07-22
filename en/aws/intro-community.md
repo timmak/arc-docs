@@ -17,7 +17,8 @@ Repos (and issue trackers) and distributions can be found here:
 ## Get Help
 
 - Come chat with us in [Slack](https://join.slack.com/t/architecture-as-text/shared_invite/MjE2MzU4Nzg0NTY1LTE1MDA2NzgyMzYtODE2NzRkOGRmYw)
-- Use the issue trackers above to file bugs, request features or even just to ask a question: nbd!
+- Use the issue trackers above to file bugs, request features or even just to ask a question: nbd! 
+- If you don't know where to file the issue just add it to [arc.codes](https://github.com/arc-repos/arc.codes/issues) tracker
 
 ## Helping Out
 
@@ -33,4 +34,4 @@ We believe open source should foster the spirit of science where we can respect,
 
 ## A Very Brief History
 
-Naming things is hard. `architect` started out as `arc` which itself was an acronym for `amazon run commands`. But mostly we just call it `arc` anyhow. The code was developed for and then extracted from begin.com and granted to JS Foundation in July of 2017 under the `Apache-2.0` license.
+Naming things is hard. `architect` started out as `arc` which itself was an acronym for `amazon run commands`. But mostly we just call it `arc`. The code was developed building https://begin.com and granted to JS Foundation in July of 2017 under the `Apache-2.0` license.

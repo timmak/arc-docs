@@ -1,15 +1,6 @@
 # Concepts
 
-`architect` guiding design principles:
-
-- Architecture as text
-- Repeatable and consistent builds
-- Delivery isolated from deployment
-- Extensible and flexibile systems
-
-## New Tech for New Problems
-
-With all the benefits of cloud functions comes new and unique problems.
+Cloud functions surface unique problems.
 
 - Configuration tooling was designed for the last generation of metaphors (and lags behind the releases of new functionality)
 - AWS is massive and overwhelming with many similar, but not the same, products
@@ -103,15 +94,32 @@ The code was also immediately deployed to the cloud in isolated `staging` and `p
 
 The `.arc` format is terse, easy to read and quickly learnable to author. That intentionality expressed in an `.arc` file unlocks formerly complex infrastructure provisioning, deployment and orchestration tasks.
 
-## Practices
+## Implementing Principles and Practices
 
-Revisiting the `architect` design principles:
+`architect` practice follows many of the principles pioneered by agile and championed by devops.  We know its a good idea to version our infrastructure. We know we need tight feedback loops for dev. We need isolation between our development stages. And most of all we need our systems to be transparent and exensible.
 
-- **Architecture as text** `.arc` manifest file defines achitecture element in the plainest text possible
-- **Repeatable and consistent builds** `arc-create` only creates, it never destroys, and skips if the thing it was to generate already exists
-- **Delivery isolated from deployment** `arc-sandbox` allows you to working locally offline from the cloud; meanwhile `arc-deploy` treats `staging` and `production` as first class concepts
-- **Extensible and flexibile systems** `arc-parser` is open, and `architect` tooling ignores `@sections` it does not know, therefore use `.arc` with your own npm scripts; `arc-modules` lets you act on all `.arc` defined modules with common `npm` commands
+### Architecture as Text
+
+- `.arc` manifest file defines achitecture element in the plainest text possible
+- Nesting is deliberately constrained
+
+### Repeatable and Consistent Builds
+
+- `arc-create` only creates, it never destroys, and skips if the thing it was to generate already exists
+- Per above, `arc-create` is intended to be run and rerun as you system changes and grows
+- Use the AWS console to admin (remove infrastructure) or script that yourself; architect never destroys
+
+### Delivery is isolated from Deployment
+
+- `arc-sandbox` allows you to working locally offline from the cloud 
+- `arc-deploy` treats `staging` and `production` as first class concepts
+
+### Extensible and Flexibile Systems
+
+- `arc-parser` is open, and `architect` tooling ignores `@sections` it does not know
+- Therefore use `.arc` with your own npm scripts
+- `arc-modules` lets you act on all `.arc` defined modules with common `npm` commands
 
 ## Next Steps
 
-Read about `.arc` [limitations](/intro/limits) next. 
+These principles and the practices that follow them are just a starting point; expect our understanding to grow and change as we learn more. Read about `.arc` [limitations](/intro/limits) next. 
