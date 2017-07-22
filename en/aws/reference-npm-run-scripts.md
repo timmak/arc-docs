@@ -2,15 +2,15 @@
 
 > The `npm run` scripts execute common development workflows against an `.arc` file.
 
-- <a href=#arc-create>`@architect/create`</a> creates code and corosponding cloud infrastructure
-- <a href=#arc-deploy>`@architect/deploy`</a> deploys cloud functions
-- <a href=#arc-sandbox>`@architect/sandbox`</a> runs cloud function code locally, offline and completely in memory
-- <a href=#arc-modules>`@architect/modules`</a> manage common npm tasks across all cloud functions
+- <a href=#arc-create>`create`</a> creates code and corosponding cloud infrastructure
+- <a href=#arc-deploy>`deploy`</a> deploys cloud functions
+- <a href=#arc-sandbox>`sandbox`</a> runs cloud function code locally, offline and completely in memory
+- <a href=#arc-modules>`modules`</a> manage common npm tasks across all cloud functions
 
 ### Setup
 
 ```bash
-npm i @architect/create @architect/deploy @architect/sandbox @architect/modules --save-dev
+npm i @architect/workflows --save-dev
 ```
 
 Add the following to `scripts` in `package.json`:
@@ -19,8 +19,8 @@ Add the following to `scripts` in `package.json`:
 {
   "create": "AWS_PROFILE=xxx AWS_REGION=us-west-1 arc-create",
   "deploy": "AWS_PROFILE=xxx AWS_REGION=us-west-1 arc-deploy",
-  "start": "arc-sandbox",
-  "install": "arc-modules-install",
+  "start": "NODE_ENV=testing arc-sandbox",
+  "i": "arc-modules-install",
   "link": "arc-modules-link",
   "uninstall": "arc-modules-uninstall",
   "update": "arc-modules-update",
@@ -31,7 +31,7 @@ Add the following to `scripts` in `package.json`:
 
 ---
 
-## <a href=#arc-create id=arc-create>`@architect/create`</a>
+## <a href=#arc-create id=arc-create>`create`</a>
 
 Create code and infra from `.arc` in the current directory:
 
@@ -41,7 +41,7 @@ npm run create
 
 ---
 
-## <a href=#arc-deploy id=arc-deploy>`@architect/deploy`</a>
+## <a href=#arc-deploy id=arc-deploy>`deploy`</a>
 
 Deploy all code in `./src` to `staging`:
 
@@ -69,7 +69,7 @@ ARC_DEPLOY=production npm run deploy src/html/get-index
 
 ---
 
-## <a href=#arc-sandbox id=arc-sandbox>`@architect/sandbox`</a>
+## <a href=#arc-sandbox id=arc-sandbox>`sandbox`</a>
 
 Start a local webserver and in memory DyanmoDB instance:
 
@@ -81,7 +81,7 @@ npm start
 
 ---
 
-## <a href=#arc-modules id=arc-modules>`@architect/modules`</a>
+## <a href=#arc-modules id=arc-modules>`modules`</a>
 
 Install a module to all `.arc` defined functions in `./src`:
 

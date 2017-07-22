@@ -4,10 +4,11 @@
 
 ## Nearterm
 
-- `.arc` validation and meaningful errors
-- `text/html` and `text/css` route handlers
-- `arc-create` support for structured http errors
-- `arc-configure` for infrastructure configuration management
+- `arc-docs`: examples and guides
+- `arc-parser`: `.arc` stricter validation and more helpful errors
+- `arc-functions`, `arc-workflows` add `text/html` and `text/css` route handlers
+- `arc-workflows` expose support structured http status codes and errors
+- `arc-env` infra env var and configuration management
 
 ## Ongoing and Future Scope
 

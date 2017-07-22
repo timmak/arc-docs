@@ -1,27 +1,27 @@
 # Community
 
-Code of Conduct
+Read the [JS Foundation Code of Conduct](https://js.foundation/community/code-of-conduct) and the [Begin Community Code of Conduct](https://github.com/smallwins/policy/blob/master/begin-community-code-of-conduct.md). We ask that you do your part in helping us ensure a safe, positive, inclusive, constructive, and welcoming environment for all.
 
 ## Get the Code
 
 Repos (and issue trackers) and distributions can be found here:
 
-| github                                                        | npm                                                                          | codeship                                                                                                                                                                                 |
-| ------------------------------------------------------------- |:----------------------------------------------------------------------------:| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| [`arc-functions`](https://github.com/arc-repos/arc-functions) | [`@architect/functions`](https://www.npmjs.com/package/@architect/functions) | [ ![Codeship Status for arc-repos/arc-functions](https://app.codeship.com/projects/6f683560-4fab-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234122) |
-| [`arc-workflows`](https://github.com/arc-repos/arc-workflows) | [`@architect/workflows`](https://www.npmjs.com/package/@architect/workflows) | [ ![Codeship Status for arc-repos/arc-workflows](https://app.codeship.com/projects/171c66d0-4fa3-0135-c228-1654ec891f79/status?branch=master)](https://app.codeship.com/projects/234104) |
-| [`arc-parser`](https://github.com/arc-repos/arc-parser) | [`@architect/parser`](https://www.npmjs.com/package/@architect/parser) | [ ![Codeship Status for arc-repos/arc-parser](https://app.codeship.com/projects/8ac91c80-4f9d-0135-36b3-22bcd0c3040e/status?branch=master)](https://app.codeship.com/projects/234098) |
-| [`arc-docs`](https://github.com/arc-repos/arc-docs) | [`@architect/docs`](https://www.npmjs.com/package/@architect/docs) | [ ![Codeship Status for arc-repos/arc-docs](https://app.codeship.com/projects/1171c2b0-4fb7-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234129) |
-| [`arc.codes`](https://github.com/arc-repos/arc.codes) | &nbsp; | [ ![Codeship Status for arc-repos/arc.codes](https://app.codeship.com/projects/69a79dc0-4fd3-0135-6f18-062897f7455f/status?branch=master)](https://app.codeship.com/projects/234163) |
+| repos / issue trackers                                         | dist                                                                                                                                    | ci                                        |
+| -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| [`arc-functions`](https://github.com/arc-repos/arc-functions)  | [<img src=https://img.shields.io/badge/%40architect%2Ffunctions-npm-lightgrey.svg>](https://www.npmjs.com/package/@architect/functions) | <a href=https://app.codeship.com/projects/234122><img src=https://img.shields.io/codeship/6f683560-4fab-0135-8928-02ec463c683c.svg></a>  |
+| [`arc-workflows`](https://github.com/arc-repos/arc-workflows)  | [<img src=https://img.shields.io/badge/%40architect%2Fworkflows-npm-lightgrey.svg>](https://www.npmjs.com/package/@architect/workflows) | <a href=https://app.codeship.com/projects/234104><img src=https://img.shields.io/codeship/171c66d0-4fa3-0135-c228-1654ec891f79.svg></a> |
+| [`arc-parser`](https://github.com/arc-repos/arc-parser)        | [<img src=https://img.shields.io/badge/%40architect%2Fparser-npm-lightgrey.svg>](https://www.npmjs.com/package/@architect/parser)       | <a href=https://app.codeship.com/projects/234098><img src=https://img.shields.io/codeship/8ac91c80-4f9d-0135-36b3-22bcd0c3040e.svg></a> |
+| [`arc-docs`](https://github.com/arc-repos/arc-docs)            | [<img src=https://img.shields.io/badge/%40architect%2Fdocs-npm-lightgrey.svg>](https://www.npmjs.com/package/@architect/docs)           | <a href=https://app.codeship.com/projects/234129><img src=https://img.shields.io/codeship/1171c2b0-4fb7-0135-8928-02ec463c683c.svg></a> |
+| [`arc.codes`](https://github.com/arc-repos/arc.codes)          | &nbsp;                                                                                                                            | <a href=https://app.codeship.com/projects/234163><img src=https://img.shields.io/codeship/69a79dc0-4fd3-0135-6f18-062897f7455f.svg></a> |
 
 ## Get Help
 
-- Join us in [Slack](https://join.slack.com/t/architecture-as-text/shared_invite/MjE2MzU4Nzg0NTY1LTE1MDA2NzgyMzYtODE2NzRkOGRmYw)
-- Use the issue trackers above
+- Come chat with us in [Slack](https://join.slack.com/t/architecture-as-text/shared_invite/MjE2MzU4Nzg0NTY1LTE1MDA2NzgyMzYtODE2NzRkOGRmYw)
+- Use the issue trackers above to file bugs, request features or even just to ask a question: nbd!
 
 ## Helping Out
 
-`architect` is open source and we need your help! Introduce yourself in the issue trackers or chat. &#x1f49e;
+`architect` is open source and we welcome your help making it better. Introduce yourself in the issue trackers or chat! &#x1f49e;
 
 ## Alternative Solutions
 

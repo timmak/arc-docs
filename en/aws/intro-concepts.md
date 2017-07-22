@@ -7,8 +7,6 @@
 - Delivery isolated from deployment
 - Extensible and flexibile systems
 
-We'll revisit these below. First lets better understand the problems `architect` aims to solve.
-
 ## New Tech for New Problems
 
 With all the benefits of cloud functions comes new and unique problems.
@@ -20,11 +18,11 @@ With all the benefits of cloud functions comes new and unique problems.
 - Configuration and infrastructure can drift, leaving systems in difficult to repeat/reproduce and thus scale
 - Painful manifest files; JSON is difficult to read, has no comments, and unforgiving to edit and YAML isn't much better and especially worse with deeply nested statements
 
-We've tamed _some_ of these problems with _infrastructure as code_ creating repeatable and reproducable systems. The tradeoff is you are committing aws configuration knowledge into your revision control systems. `.arc` views infrastructure as a build artifact. *And we do not like checking build artifacts into our code.*
+We've tamed _some_ of these problems with _infrastructure as code_ creating repeatable and reproducable systems. The tradeoff is you are committing aws configuration knowledge into your revision control systems. `.arc` views infrastructure as a build artifact. And we prefer to not check build artifacts in with our code.
 
 ## .arc file
 
-`architect` defines a plain text format `.arc` for a manfiest file. It is designed to solve the specific problems above.
+`architect` defines a simplistic plaintext format `.arc` for a manfiest file to solve the specific problems above.
 
 - Focus on defining your app architecture with a subset of service primatives as high level defintions
 - Use `npm scripts` to  generate local code, configure, provision and deploy cloud infrastructure from the `.arc` manifest

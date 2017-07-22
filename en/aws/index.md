@@ -16,6 +16,7 @@ Everything you do with `architect` starts with an `.arc` file:
 ```arc
 # this is an .arc file
 @app
+testapp
 
 @html
 get /
