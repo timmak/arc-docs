@@ -22,12 +22,6 @@ testapp
 get /
 get /hellos
 post /hello
-
-@css
-style.css
-
-@js
-index.js
 ```
 
 Running `npm run create` generates cloud function code locally:
@@ -39,10 +33,6 @@ Running `npm run create` generates cloud function code locally:
 | | |-get-index/
 | | |-get-hellos/
 | | '-post-hello/
-| |-css
-| | '-style-css/
-| '-js
-|   '-index-js/
 |-.arc
 '-package.json
 
@@ -60,12 +50,11 @@ And `npm run deploy` ships this code to the cloud. <span class=cloud>&#x1f329;</
 ### Workflows Currently Supported
 
 - **Create infra** from an `.arc` manifest (makes deletion and re-creation of infrastructure trivial; change regions in minutes)
-- **Work locally** while completely offline with a speedy in memory database
 - **Deploy in seconds** with first class support for `staging` and `production` with a proper `NODE_ENV` environment variable 
+- **Work locally** while completely offline with a speedy in memory database
  
 ## Next Steps
 
 - [Read the introduction](/intro)
 - [Follow the quickstart](/quickstart)
 - [Read the reference](/reference)
-- [Copy/paste examples](/examples)
