@@ -6,7 +6,7 @@ Open up a terminal and create a project folder:
 mkdir mytestapp
 cd mytestapp
 npm init --yes
-npm install @smallwins/arc-create @smallwins/arc-deploy --save
+npm install @architect/workflows --save
 touch .arc
 ```
 
@@ -16,7 +16,8 @@ Add the following to `scripts` in the `package.json`:
 // don't forget to setup your AWS_PROFILE
 {
   "create": "AWS_PROFILE=xxx AWS_REGION=us-west-1 arc-create",
-  "deploy": "AWS_PROFILE=xxx AWS_REGION=us-west-1 arc-deploy"
+  "deploy": "AWS_PROFILE=xxx AWS_REGION=us-west-1 arc-deploy",
+  "start": "NODE_ENV=testing arc-sandbox"
 }
 ```
 

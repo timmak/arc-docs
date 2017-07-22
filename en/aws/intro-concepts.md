@@ -7,7 +7,7 @@
 - Delivery isolated from deployment
 - Extensible and flexibile systems
 
-We'll revisit these. First lets better understand the problems `architect` aims to solve.
+We'll revisit these below. First lets better understand the problems `architect` aims to solve.
 
 ## New Tech for New Problems
 

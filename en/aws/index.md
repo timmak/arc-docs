@@ -2,7 +2,7 @@
 
 > provision and deploy cloud architecture as text
 
-Event driven programming with cloud functions.
+Event driven programming with cloud functions is tricky to setup and maintain. `architect` offers a simplistic plaintext manifest and `npm` script based workflows for creating, deploying, working offline and more.
 
 Currently supporting Amazon Web Services:
 
@@ -29,7 +29,7 @@ style.css
 index.js
 ```
 
-Running `npm run create` generates cloud function code:
+Running `npm run create` generates cloud function code locally:
 
 ```bash
 /
@@ -59,8 +59,8 @@ And `npm run deploy` ships this code to the cloud. <span class=cloud>&#x1f329;</
 ### Workflows Currently Supported
 
 - **Create infra** from an `.arc` manifest (makes deletion and re-creation of infrastructure trivial; change regions in minutes)
-- **Work locally** while completely offline [IN PROGRESS] (including in memory dynamo instance so its super fast--h/t dynalite!)
-- **Deploy in seconds** (setup with `staging` and `production` using a proper environment variable `NODE_ENV`)
+- **Work locally** while completely offline with a speedy in memory database
+- **Deploy in seconds** with first class support for `staging` and `production` with a proper `NODE_ENV` environment variable 
  
 ## Next Steps
 
