@@ -4,10 +4,10 @@
 
 ## Nearterm
 
-- `arc-sandbox` error traps for 302, 403, 404 and 500
-- `arc-env` infra env var and configuration management
+- `arc-functions` conslidate req/res impl
 - `text/javascript` and `text/css` route handlers
-- `arc-docs`: examples and guides
+- `arc-env` infra env var and configuration management
+- `arc-docs`: examples, guides, crsf and url helpers
 
 ## Ongoing and Future Scope
 

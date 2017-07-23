@@ -1,6 +1,6 @@
 # Concepts
 
-Cloud functions surface unique problems.
+Cloud functions surface unique problems:
 
 - Configuration tooling was designed for the last generation of metaphors (and lags behind the releases of new functionality)
 - AWS is massive and overwhelming with many similar, but not the same, products
@@ -96,12 +96,13 @@ The `.arc` format is terse, easy to read and quickly learnable to author. That i
 
 ## Implementing Principles and Practices
 
-`architect` practice follows many of the principles pioneered by agile and championed by devops.  We know its a good idea to version our infrastructure. We know we need tight feedback loops for dev. We need isolation between our development stages. And most of all we need our systems to be transparent and exensible.
+`architect` practice follows many of the principles pioneered by agile and championed by devops. Versioning infrastructure. Tight feedback loops for dev while maintaining isolation between stages. Systems that are consistent, inspectable, transparent and exensible. 
 
 ### Architecture as Text
 
 - `.arc` manifest file defines achitecture element in the plainest text possible
-- Nesting is deliberately constrained
+- Nesting and syntax is deliberately constrained
+- And comments!
 
 ### Repeatable and Consistent Builds
 
@@ -113,6 +114,7 @@ The `.arc` format is terse, easy to read and quickly learnable to author. That i
 
 - `arc-sandbox` allows you to working locally offline from the cloud 
 - `arc-deploy` treats `staging` and `production` as first class concepts
+- deployment to `production` requires an extra manual step of setting `ARC_DEPLOY=production` env var
 
 ### Extensible and Flexibile Systems
 

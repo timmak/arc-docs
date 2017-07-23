@@ -16,10 +16,10 @@ The cloud brings significant advances to our ability to deliver software:
 
 VM's and containers are not problem free.
 
-- It can be a nebulous Cloud. Even the errors are eventually consistent! Failure is common, expected really, and software needs to bake in service discovery, retry logic
-- Elastic scaling of server instances often just load balanced monolithic applications
+- It can be a nebulous Cloud: even the errors are eventually consistent! Failure is expected and software needs to bake in service discovery and retry logic
 - Setting up the infrastructure is difficult, time consuming and complex
-- Full deployment cycles with zero downtime take a long time to complete
+- Elastic scaling instances often just load balancing fleets of monolithic applications
+- Full deployment cycles across a fleet with zero downtime can take a very long time to complete
 - Costly billing and rising costs (smallest unit of compute is your entire app)
 
 ## Cloud Functions

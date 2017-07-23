@@ -6,7 +6,7 @@ The cloud has limits. And arc itself is an abstraction with deliberate constrain
 
 - Stuff **Just Fails** and you won't always get a useful error 
   - This means: you HAVE to consider retrys including manual retrys where you create/destory/recreate infra workflows (and accordingly `.arc` workflows are intended to be run and rerun)
-  - Yes: I guess it is "kinda gross"! But: it works. Call this condition *immutable infrastructure* and maybe you'll feel better about it? &#128150;
+  - Yes: it is "kinda gross" but it works. Sometimes we call this situation *immutable infrastructure* to feel better! &#128150;
 - Regions go down and there isn't really a great way beyond a DNS change window to move them
 - Lambda cold starts are vicious on large lambdas; the best antidote is to author small as possible lambda functions (rule of thumb: sub 5mb is sub second)
 - API Gateway: whereby 403 it probably meant 404
@@ -18,7 +18,7 @@ The cloud has limits. And arc itself is an abstraction with deliberate constrain
 
 ## Arc Constraints ;)
 
-File these things as: maybe someday. Many of these constraints where out of bare neccessity of speed aided by attempts to arrive an sort of minimum possible essentials. These items will be great topics of community discussion and future contribution.
+File these things as: _maybe someday_. Most of these constraints where borne out of neccessity for speed; velocity aided by way of minimum essential capability. These items will be great topics of community discussion and future contribution.
 
 - `PATCH`, `PUT`, `DELETE` are not suppported but maybe they shouldn't be (100% support everthing browsers do: `GET` and `POST` ;)
 - Routes must be unqiue (no overloading `Content-Type`); its possible but you probably don't want to do that anyhow
