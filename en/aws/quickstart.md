@@ -6,6 +6,6 @@ This documentation, and indeed the `architect` code itself, assumes you're runni
 
 ## Get started in three easy steps
 
-1. [Set p your AWS Credentials](/quickstart/setup)
+1. [Set up your AWS Credentials](/quickstart/setup)
 2. [Create a project and install architect](/quickstart/install)
 3. [Review the project layout](/quickstart/arc-project-layout)

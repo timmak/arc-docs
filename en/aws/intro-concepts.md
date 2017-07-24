@@ -100,7 +100,7 @@ The code was also immediately deployed to the cloud in isolated `staging` and `p
 
 `architect` ships additional `npm run` workflows for deployment, working offline, and dependency management.
 
-The `.arc` format is terse, easy to read, and quickly learnable to author. The intent expressed by a `.arc` file unlocks the formerly complex tasks of cloud infrastructure provisioning, deployment, and orchestration.
+The `.arc` format is terse, easy to read, and quickly learnable to author. The expressions in a `.arc` file unlock the formerly complex tasks of cloud infrastructure provisioning, deployment, and orchestration.
 
 ## Implementing principles and practices
 
@@ -130,8 +130,4 @@ The `.arc` format is terse, easy to read, and quickly learnable to author. The i
 - Therefore, you can use `.arc` with your own `npm` scripts
 - `arc-modules` lets you act on all `.arc` defined modules with common `npm` commands
 
-## Next steps
-
-These principles and the practices that follow them are just a starting point; expect our understanding to grow and change as we learn more.
-
-Next up: [read about .arc limitations](/intro/limits).
+## Next: [.arc limitations](/intro/limits)

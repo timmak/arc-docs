@@ -52,7 +52,7 @@ And `npm run deploy` ships this code to the cloud. <span class=cloud>&#x1f329;</
 - **Deploy in seconds** with first class support for `staging` and `production` with a proper `NODE_ENV` environment variable 
 - **Work locally** while completely offline with a speedy in-memory database
  
-## Next Steps
+## Next steps
 
 - [Read the introduction](/intro)
 - [Follow the quickstart](/quickstart)

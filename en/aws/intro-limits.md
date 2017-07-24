@@ -29,6 +29,4 @@ These items will be great topics of community discussion and future contribution
 - An `application/x-form-urlencoded` `POST` must respond with a redirect
 - Currently only `String` and `Number` types are supported for Partition and Sort keys in DynamoDB
  
-## Next steps
-
-[Check out the quickstart](/quickstart).
+## Next: [Check out the quickstart](/quickstart)
