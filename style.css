@@ -7,6 +7,16 @@ body {
   font-size: 1em;
 }
 
+a {
+  color: #16c2ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00afee;
+  text-decoration: none;
+}
+
 media (max-width: 390px) {
   body:after {
     content: "<";
@@ -29,7 +39,11 @@ code {
   line-height: 1em;
   background:white;
   opacity: .7;
-  padding:3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #ff5858;
   border-radius: 5px;
 }
 
@@ -87,7 +101,7 @@ header ul a {
 }
 
 header ul a:hover {
-  color: cyan;
+  color: #00afee;
 }
 
 section>section {
