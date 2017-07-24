@@ -106,6 +106,8 @@ section>section {
 
 section>section h1 {
   font-size: 3em;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 /* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript */
 /**
