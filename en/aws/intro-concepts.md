@@ -134,4 +134,4 @@ The `.arc` format is terse, easy to read, and quickly learnable to author. The i
 
 These principles and the practices that follow them are just a starting point; expect our understanding to grow and change as we learn more.
 
-Next up: read about `.arc` [limitations](/intro/limits).
+Next up: [read about .arc limitations](/intro/limits).
