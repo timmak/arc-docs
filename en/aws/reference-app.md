@@ -1,6 +1,6 @@
 # @app
 
-`@app` is where you declare your app namespace.
+## `@app` is where you declare your app namespace.
 
 For example, to create the app "foobaz":
 
@@ -16,8 +16,4 @@ A good `@app` is short, lowercase and dasherized.
 good-app
 ```
 
-&#x1f485;
-
-## Next Steps
-
-- Check out [`@html`](/reference/html)
+## Next: [Defining routes with `@html`](/reference/html)

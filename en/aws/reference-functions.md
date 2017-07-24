@@ -1,26 +1,26 @@
-# Functions
+# Authoring cloud functions
 
-> `@architect/functions` is for creating cloud function signatures
+## `@architect/functions` is for creating cloud function signatures
 
-- <a href=#arc.html.get>`arc.html.get(...fns)`</a>
-- <a href=#arc.html.post>`arc.html.post(...fns)`</a>
-- <a href=#arc.json.get>`arc.json.get(...fns)`</a>
-- <a href=#arc.json.post>`arc.json.post(...fns)`</a>
-- <a href=#arc.events.subscribe>`arc.events.subscribe((payload, callback)=>)`</a>
-- <a href=#arc.events.publish>`arc.events.publish(params, callback)` where `params` requires `name` and `payload` and optionally `app` keys</a>
-- <a href=#arc.tables.insert>`arc.tables.insert((record, callback)=>)`</a>
-- <a href=#arc.tables.update>`arc.tables.update((record, callback)=>)`</a>
-- <a href=#arc.tables.destroy>`arc.tables.destroy((record, callback)=>)`</a>
+- [`arc.html.get(...fns)`](#arc.html.get)
+- [`arc.html.post(...fns)`](#arc.html.post)
+- [`arc.json.get(...fns)`](#arc.json.get)
+- [`arc.json.post(...fns)`](#arc.json.post)
+- [`arc.events.subscribe((payload, callback)=>)`](#arc.events.subscribe)
+- [`arc.events.publish(params, callback)` where `params` requires `name` and `payload` and optionally `app` keys](#arc.events.publish)
+- [`arc.tables.insert((record, callback)=>)`](#arc.tables.insert)
+- [`arc.tables.update((record, callback)=>)`](#arc.tables.update)
+- [`arc.tables.destroy((record, callback)=>)`](#arc.tables.destroy)
 
-`arc.html` and `arc.json` functions accepts one or more Express middleware style functions `(req, res, next)=>`.
+`arc.html` and `arc.json` functions accept one or more Express-style middleware functions `(req, res, next)=>`.
 
 ---
 
 ## <a id=arc.html.get href=#arc.html.get>`arc.html.get`</a>
 
-> HTTP `GET` handler that responds with `text/html`
+### HTTP `GET` handler that responds with `text/html`
 
-An example:
+Example:
 
 ```javascript
 var arc = require('@architect/functions')
@@ -36,16 +36,16 @@ exports.handler = arc.html.get(handler)
 
 Things to understand:
 
-- `arc.html.get` accepts one or more functions that follow Express style middleware signature: `(req, res, next)=>`
+- `arc.html.get` accepts one or more functions that follow Express-style middleware signature: `(req, res, next)=>`
 - `req` is a plain JavaScript `Object` with `path`, `method`, `query`, `params`, `body` keys
 - `res` is a function that must be invoked with named params: 
   - `html` a string value containing html content
-  - or `location` with a url value (a string starting w `/`)
+  - or `location` with a URL value (a string starting w `/`)
   - `session` (optional) a plain `Object`
-  - `status` (optional) HTTP error statusCode responses: `500`, `403` or `404`
-- `next` is an optional function to continue middleware execution 
+  - `status` (optional) HTTP error status code responses: `500`, `403`, or `404`
+- `next` (optional) is a function to continue middleware execution 
 
-Here's an example using `session` and `location`. First we render a form.
+Here's an example using `session` and `location`. First we render a form:
 
 ```javascript
 // src/html/get-index
@@ -90,7 +90,7 @@ exports.handler = arc.html.post(handler)
 
 ## <a id=arc.html.post href=#arc.html.post>`arc.html.post`</a>
 
-> HTTP `POST` handler that responds with HTTP statusCode `302` and Location redirect
+### HTTP `POST` handler that responds with HTTP status code `302` and Location redirect
 
 - HTTP `POST` routes can **only** call `res` with `location` key and value of the path to redirect to. 
 - `session` can also optionally be set.
@@ -132,11 +132,13 @@ exports.handler = arc.html.post(validate, handler)
 
 ### Sessions
 
-By default, all `@html` routes are session enabled. If you wish to disable sessions remove `SESSION_TABLE_NAME` env variable from the deployment config in the AWS Console.
+By default, all `@html` routes are session-enabled. If you wish to disable sessions, remove `SESSION_TABLE_NAME` env variable from the deployment config in the AWS Console.
+
+---
 
 ## <a id=arc.json.get href=#arc.json.get>`arc.json.get`</a>
 
-A `@json` route handler:
+Example `@json` route handler:
 
 ```javascript
 var arc = require('@smallwins/arc-prototype')
@@ -152,18 +154,18 @@ exports.handler = arc.json.get(handler)
 
 Things to understand:
 
-- `arc.json.get` and `arc.json.post` accept one or more functions that follow Express style middleware ssignature: `(req, res, next)=>`
-- `req` is a plain object with `path`, `method`, `query`, `params`, `body` keys
+- `arc.json.get` and `arc.json.post` accept one or more functions that follow Express-style middleware signature: `(req, res, next)=>`
+- `req` is a plain object with `path`, `method`, `query`, `params`, and `body` keys
 - `res` is a function that must be invoked with named params: 
   - `json` a plain `Object` value
-  - or `location` with a url value (a string starting w `/`)
+  - or `location` with a URL value (a string starting w `/`)
   - `session` (optional) a plain `Object`
-  - `status` (optional) HTTP error statusCode responses: `500`, `403` or `404`
+  - `status` (optional) HTTP error status code responses: `500`, `403`, or `404`
 - `next` is an optional function to continue middleware execution
 
 ### Sessions
 
-By default, all `@json` routes are session enabled. If you wish to disable sessions remove `SESSION_TABLE_NAME` env variable from the deployment config in the AWS Console.
+By default, all `@json` routes are session-enabled. If you wish to disable sessions remove `SESSION_TABLE_NAME` env variable from the deployment config in the AWS Console.
 
 ---
 
@@ -185,7 +187,7 @@ exports.handler = arc.json.post(handler)
 
 ## <a id=arc.events.subscribe href=#arc.events.subscribe>`arc.events.subscribe`</a>
 
-> Subscribe functions to events
+### Subscribe functions to events
 
 An example of a `hit-counter` event handler:
 
@@ -205,7 +207,7 @@ exports.handler = arc.events.subscribe(count)
 
 ## <a id=arc.events.publish href=#arc.events.publish>`arc.events.publish`</a>
 
-> Publish events from any other function
+### Publish events from any other function
 
 Once deployed you can invoke `@event` handlers from any other function defined under the same `@app` namespace:
 
@@ -234,7 +236,7 @@ arc.events.publish({
 
 ## <a id=arc.tables.insert href=#arc.tables.insert>`arc.tables.insert`</a>
 
-> Respond to data being inserted into a DynamoDB table
+### Respond to data being inserted into a DynamoDB table
 
 ```javascript
 var arc = require('@architect/functions')
@@ -251,7 +253,7 @@ exports.handler = arc.tables.insert(handler)
 
 ## <a id=arc.tables.update href=#arc.tables.update>`arc.tables.update`</a>
 
-> Respond to data being updated in a DynamoDB table
+### Respond to data being updated in a DynamoDB table
 
 ```javascript
 var arc = require('@architect/functions')
@@ -267,7 +269,7 @@ exports.handler = arc.tables.update(handler)
 
 ## <a id=arc.tables.destroy href=#arc.tables.destroy>`arc.tables.destroy`</a>
 
-> Respond to data being removed from a DynamoDB table
+### Respond to data being removed from a DynamoDB table
 
 ```javascript
 var arc = require('@architect/functions')
@@ -281,6 +283,4 @@ exports.handler = arc.tables.destroy(handler)
 ```
 ---
 
-## Next Steps
-
-Read about [`@app`](/reference/app) namespace defined in an `.arc` file.
+## Next: [`@app` namespace in an `.arc` file](/reference/app)

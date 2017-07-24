@@ -1,4 +1,4 @@
-# Install
+# Install architect
 
 Open up a terminal and create a project folder:
 
@@ -13,7 +13,7 @@ touch .arc
 Add the following to `scripts` in the `package.json`:
 
 ```javascript
-// don't forget to setup your AWS_PROFILE
+// don't forget to set up your AWS_PROFILE
 {
   "create": "AWS_PROFILE=xxx AWS_REGION=us-west-1 arc-create",
   "deploy": "AWS_PROFILE=xxx AWS_REGION=us-west-1 arc-deploy",
@@ -34,8 +34,8 @@ get /
 get /api
 ```
 
-Run `npm run create` and check out the freshly deployed app. You have successfully *"installed"* arc!
+Run `npm run create` and check out the freshly deployed app.
 
-## Next Steps
+Congrats, you've successfully installed `architect`!
 
-- Get a sense of the [project layout](/quickstart/arc-project-layout).
+## Next: [.arc project layout](/quickstart/arc-project-layout).

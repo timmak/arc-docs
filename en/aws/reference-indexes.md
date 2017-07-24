@@ -1,6 +1,12 @@
 # @indexes
 
-> `@indexes` define DynamoDB table indexes
+## `@indexes` define DynamoDB table indexes
+
+The syntax for defining `@tables` and `@indexes` is identical:
+
+- Partition key, defined by a `*`, is required
+- Sort key, defined by `**`, is optional
+- Currently only `String` an `Number` keys are implemented 
 
 The following `.arc` file defines a DynamoDB table with two Global Secondary Indexes:
 
@@ -20,13 +26,7 @@ accounts
   created *String
 ```
 
-The syntax for defining `@tables` and `@indexes` is identical.
+## Recommended 
 
-- Partition key, defined by a `*`, is required
-- Sort key, defined by `**`, is optional
-- Currently only `String` an `Number` keys are implemented 
-
-## Reccomended 
-
-DynamoDB is a powerful database. There is a great deal more to learn to take full advantage of it. Dig into [Amazon's DynamoDB documentation](https://aws.amazon.com/documentation/dynamodb/) to build out your apps data layer.
+DynamoDB is a powerful database. There is a great deal more to learn to take full advantage of it. Dig into [Amazon's DynamoDB documentation](https://aws.amazon.com/documentation/dynamodb/) to build out your app's data layer.
 

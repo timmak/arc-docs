@@ -1,6 +1,6 @@
 # @events
 
-> `@events` define SNS topics and Lambda handlers for them. 
+## `@events` define SNS topics and Lambda handlers for them. 
 
 This `.arc` file defines two `@events`:
 
@@ -13,15 +13,15 @@ hit-counter
 likes
 ```
 
-Which generates the corosponding code:
+Which generates the corresponding code:
 
 ```bash
 /
-|-events
-| |-hit-counter/
-| '-likes/
-|-.arc
-'-package.json
+├── events
+│   ├── hit-counter/
+│   └── likes/
+├── .arc
+└── package.json
 ```
 
 And the following deployment lambdas:
@@ -31,6 +31,4 @@ And the following deployment lambdas:
 - `testapp-staging-likes`
 - `testapp-production-likes`
 
-## Next Steps
-
-- Check out [`@scheduled`](/reference/scheduled)
+## Next: [Scheduling functions with `@scheduled`](/reference/scheduled)

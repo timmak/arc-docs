@@ -1,10 +1,12 @@
 # Community
 
-Read the [JS Foundation Code of Conduct](https://js.foundation/community/code-of-conduct) and the [Begin Community Code of Conduct](https://github.com/smallwins/policy/blob/master/begin-community-code-of-conduct.md). We ask that you do your part in helping us ensure a safe, positive, inclusive, constructive, and welcoming environment for all.
+First, please familiarize yourself with the [JS Foundation Code of Conduct](https://js.foundation/community/code-of-conduct) and the [Begin Community Code of Conduct](https://github.com/smallwins/policy/blob/master/begin-community-code-of-conduct.md).
 
-## Get the Code
+We ask that you do your part in helping us ensure a safe, positive, inclusive, constructive, and welcoming environment for all.
 
-Repos (and issue trackers) and distributions can be found here:
+## Get the code
+
+Repos (with issue trackers) and distributions can be found here:
 
 | repos / issue trackers                                         | dist                                                                                                                                    | ci                                        |
 | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
@@ -12,26 +14,30 @@ Repos (and issue trackers) and distributions can be found here:
 | [`arc-workflows`](https://github.com/arc-repos/arc-workflows)  | [<img src=https://img.shields.io/badge/%40architect%2Fworkflows-npm-lightgrey.svg>](https://www.npmjs.com/package/@architect/workflows) | <a href=https://app.codeship.com/projects/234104><img src=https://img.shields.io/codeship/171c66d0-4fa3-0135-c228-1654ec891f79.svg></a> |
 | [`arc-parser`](https://github.com/arc-repos/arc-parser)        | [<img src=https://img.shields.io/badge/%40architect%2Fparser-npm-lightgrey.svg>](https://www.npmjs.com/package/@architect/parser)       | <a href=https://app.codeship.com/projects/234098><img src=https://img.shields.io/codeship/8ac91c80-4f9d-0135-36b3-22bcd0c3040e.svg></a> |
 | [`arc-docs`](https://github.com/arc-repos/arc-docs)            | [<img src=https://img.shields.io/badge/%40architect%2Fdocs-npm-lightgrey.svg>](https://www.npmjs.com/package/@architect/docs)           | <a href=https://app.codeship.com/projects/234129><img src=https://img.shields.io/codeship/1171c2b0-4fb7-0135-8928-02ec463c683c.svg></a> |
-| [`arc.codes`](https://github.com/arc-repos/arc.codes)          | &nbsp;                                                                                                                            | <a href=https://app.codeship.com/projects/234163><img src=https://img.shields.io/codeship/69a79dc0-4fd3-0135-6f18-062897f7455f.svg></a> |
+| [`arc.codes`](https://github.com/arc-repos/arc.codes)          | ..                                                                                                                                      | <a href=https://app.codeship.com/projects/234163><img src=https://img.shields.io/codeship/69a79dc0-4fd3-0135-6f18-062897f7455f.svg></a> |
 
-## Get Help
+## Get help
 
-- Come chat with us in [Slack](https://join.slack.com/t/architecture-as-text/shared_invite/MjE2MzU4Nzg0NTY1LTE1MDA2NzgyMzYtODE2NzRkOGRmYw)
-- Use the issue trackers above to file bugs, request features or even just to ask a question: nbd! 
+- Come chat with us in [Slack](https://join.slack.com/t/architecture-as-text/shared_invite/MjE2MzU4Nzg0NTY1LTE1MDA2NzgyMzYtODE2NzRkOGRmYw)!
+- Use the issue trackers above to file bugs, request features, or even just to ask a question
 - If you don't know where to file the issue just add it to [arc.codes](https://github.com/arc-repos/arc.codes/issues) tracker
 
-## Helping Out
+## Helping out
 
 `architect` is open source and we welcome your help making it better. Introduce yourself in the issue trackers or chat! &#x1f49e;
 
-## Alternative Solutions
+## Alternative solutions
 
 If you are evaluating `architect` we also reccomend checking out:
 
-- this space intentially blank for now! norobots
+- [this space intentially blank for now! norobots]
 
-We believe open source should foster the spirit of science where we can respect, learn and build on each others work. There will be more than one way to provision and deploy cloud functions. The solutions listed above will meet some project and team needs better than `architect`.
+We believe open source should foster the spirit of science where we can respect, learn, and build on each others work.
 
-## A Very Brief History
+There will be more than one way to provision and deploy cloud functions. The solutions listed above will meet some project and team needs better than `architect`.
 
-Naming things is hard. `architect` started out as `arc` which itself was an acronym for `amazon run commands`. But mostly we just call it `arc`. The code was developed building https://begin.com and granted to JS Foundation in July of 2017 under the `Apache-2.0` license.
+## A very brief history
+
+Naming things is hard. `architect` started out as `arc` which itself was an acronym for `Amazon run commands`. But mostly we just call it `arc`.
+
+The code was developed building [Begin](https://begin.com) and granted to [JS Foundation](https://js.foundation/) in July of 2017 under the `Apache-2.0` license.

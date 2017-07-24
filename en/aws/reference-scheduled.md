@@ -1,6 +1,6 @@
 # @scheduled
 
-> `@scheduled` functions are invoked at the times you specify
+## `@scheduled` functions are invoked at the times you specify
 
 This `.arc` file defines some scheduled functions:
 
@@ -17,11 +17,11 @@ Which generates the following code:
 
 ```bash
 /
-|-scheduled
-| |-daily-update-buddy/
-| '-friyay-only/
-|-.arc
-'-package.json
+├── scheduled
+│   ├── daily-update-buddy/
+│   └── friyay-only/
+├── .arc
+└── package.json
 ```
 
 And the following deployment Lambdas:
@@ -31,6 +31,4 @@ And the following deployment Lambdas:
 - `testapp-staging-friyay-only`
 - `testapp-production-friyay-only`
 
-## Next Steps
-
-- Check out [`@tables`](/reference/tables)
+## Next: [Define DynamoDB tables with `@tables`](/reference/tables)
