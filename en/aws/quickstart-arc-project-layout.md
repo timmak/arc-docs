@@ -26,15 +26,15 @@ Running `npm run create` creates the following code:
 
 ```bash
 /
-├── src
-│   ├── events
-│   │   └── hello/
-│   ├── html
-│   │   └── get-index/
-│   └── json
-│       └── get-posts/
-├── .arc
-└── package.json
+|-- src
+|   |-- events
+|   |   `-- hello/
+|   |-- html
+|   |   `-- get-index/
+|   `-- json
+|       `-- get-posts/
+|-- .arc
+`-- package.json
 ```
 
 The generated code was also immediately deployed. Subsequent edits to the local code is deployed by running `npm run deploy`.
