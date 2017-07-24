@@ -10,7 +10,7 @@ Whether we label them *constraints* or *limits*, they are **tradeoffs** you need
   - This means: you _must_ consider retrys, including manual retrys, where you create / destory / recreate infra workflows (and, accordingly, `.arc` workflows are intended to be run and re-run)
   - Yes, it's "kinda gross" but it does actually work works. Sometimes we call this situation *immutable infrastructure* to feel better! &#128150;
 - Regions go down, and there isn't necessarily a great way to move them without a DNS change
-- Lambda cold starts are vicious on large lambdas; the best antidote is to author small as possible lambda functions (rule of thumb: sub 5MB compressed, including modules, usually results in sub-second execution)
+- Lambda cold starts are vicious on large Lambdas; the best antidote is to author small as possible Lambda functions (rule of thumb: sub 5MB compressed, including modules, usually results in sub-second execution)
 - API Gateway: whereby 403 it probably meant 404
 - General sketchiness that is distributed systems (gray failures)
 - API Gateway API limits can be brutal, so creating http routes can be slow (i.e. generating a large amount of routes can take minutes)
