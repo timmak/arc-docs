@@ -51,7 +51,7 @@ blockquote {
 }
 
 header {
-  width:15%;
+  width: 170px;
   min-width: 170px;
   background: #333333;
   position: fixed;
@@ -91,7 +91,7 @@ header ul a:hover {
 }
 
 section>section {
-  margin-left:18%;
+  margin-left: 200px;
   margin-right: 7%;
   padding: 20px 0 0 0;
 }
