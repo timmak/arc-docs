@@ -1,6 +1,6 @@
 # Reference
 
-## Workflows & authoring
+## Workflows & functions
 
 - [Dev workflows using `npm run` scripts](/reference/npm-run-scripts)
 - [Authoring cloud functions](/reference/functions)

@@ -1,11 +1,11 @@
 # Workflows
 
-> The `npm run` scripts execute common development workflows against an `.arc` file.
+## `npm run` scripts execute common development workflows against an `.arc` file.
 
-- <a href=#arc-create>`create`</a> creates code and corosponding cloud infrastructure
-- <a href=#arc-deploy>`deploy`</a> deploys cloud functions
-- <a href=#arc-sandbox>`sandbox`</a> runs cloud function code locally, offline and completely in memory
-- <a href=#arc-modules>`modules`</a> manage common npm tasks across all cloud functions
+- [`create`](#arc-create) creates code and corosponding cloud infrastructure
+- [`deploy`](#arc-deploy) deploys cloud functions
+- [`sandbox`](#arc-sandbox) runs cloud function code locally, offline and completely in memory
+- [`modules`](#arc-modules) manage common npm tasks across all cloud functions
 
 ### Setup
 
@@ -27,7 +27,7 @@ Add the following to `scripts` in `package.json`:
 }
 ```
 
-> Don't forget to setup `AWS_PROFILE` and `AWS_REGION` env variables
+Don't forget: you have to set up `AWS_PROFILE` and `AWS_REGION` env variables ([see more here](/quickstart/setup)).
 
 ---
 
@@ -55,13 +55,13 @@ Deploy all code in `./src` to `production`:
 ARC_DEPLOY=production npm run deploy
 ```
 
-Deploy a single (example) function to `staging`:
+Deploy a single function (example: `get /`) to `staging`:
 
 ```bash
 npm run deploy src/html/get-index
 ```
 
-Deploy a single (example!) function to `production`:
+Deploy a single function (example: `get /`) to `production`:
 
 ```bash
 ARC_DEPLOY=production npm run deploy src/html/get-index
@@ -71,37 +71,37 @@ ARC_DEPLOY=production npm run deploy src/html/get-index
 
 ## <a href=#arc-sandbox id=arc-sandbox>`sandbox`</a>
 
-Start a local webserver and in memory DyanmoDB instance:
+Start a local webserver and in-memory DyanmoDB instance:
 
 ```bash
 npm start
 ```
 
-> Works super well with [Nodemon](https://nodemon.io)
+Tip: Works super well with [Nodemon](https://nodemon.io)!
 
 ---
 
 ## <a href=#arc-modules id=arc-modules>`modules`</a>
 
-Install a module to all `.arc` defined functions in `./src`:
+Install a module to all `.arc`-defined functions in `./src`:
 
 ```bash
 npm run install lodash
 ```
 
-Link a local module to all `.arc` defined functions in `./src`:
+Link a local module to all `.arc`-defined functions in `./src`:
 
 ```bash
 npm run link src/md
 ```
 
-Uninstall a module from all `.arc` defined functions in `./src`:
+Uninstall a module from all `.arc`-defined functions in `./src`:
 
 ```bash
 npm run uninstall lodash
 ```
 
-Update a module in all `.arc` defined functions in `./src`:
+Update a module in all `.arc`-defined functions in `./src`:
 
 ```bash
 npm run update lodash
@@ -109,6 +109,4 @@ npm run update lodash
 
 ---
 
-## Next Steps
-
-Learn about authoring `.arc` defined cloud functions with the [`@architect/functions`](/reference/functions) namespace.
+## Next: [Authoring `.arc`-defined cloud functions](/reference/functions)
