@@ -1,11 +1,11 @@
 # Reference
 
-Find all the details for:
+## Workflows & authoring
 
-- [Dev workflows using `npm scripts`](/reference/npm-run-scripts)
+- [Dev workflows using `npm run` scripts](/reference/npm-run-scripts)
 - [Authoring cloud functions](/reference/functions)
 
-`.arc` file reference:
+## `.arc` file reference:
 
 - [@app](/reference/app)
 - [@html](/reference/html)
@@ -15,7 +15,7 @@ Find all the details for:
 - [@tables](/reference/tables)
 - [@indexes](/reference/indexes)
 
-## Also Reccomended
+## Also recommended
 
 - [AWS JavaScript SDK](http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/top-level-namespace.html)
 - [AWS DynamoDB Docs](https://aws.amazon.com/documentation/dynamodb/)
