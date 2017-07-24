@@ -27,13 +27,13 @@ Running `npm run create` generates cloud function code locally:
 
 ```bash
 /
-├── src
-│   └── html
-│       ├── get-index/
-│       ├── get-hellos/
-│       └── post-hello/
-├── .arc
-└── package.json
+|-- src
+|   `-- html
+|       |-- get-index/
+|       |-- get-hellos/
+|       `-- post-hello/
+|-- .arc
+`-- package.json
 
 ```
 
