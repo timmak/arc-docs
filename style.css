@@ -53,7 +53,7 @@ blockquote {
 header {
   width:15%;
   min-width: 170px;
-  background:black;
+  background: #333333;
   position: fixed;
   overflow: auto;
   height: 100%;
@@ -70,7 +70,8 @@ header ul ul {
 
 header ul li {
   list-style:none;  
-  padding-left:10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
 }
 
 header ul ul li:last-child {
@@ -81,7 +82,8 @@ header ul a {
   text-decoration: none;
   width: 100%;
   display: block;
-  color:grey;
+  color: white;
+  padding-bottom: 5px;
 }
 
 header ul a:hover {
