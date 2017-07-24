@@ -34,10 +34,10 @@ module.exports = function render(filename) {
         </head>
         <body>
         <section>
-          <header>
-            <nav>${md(nav)}</nav>
-          </header>
           <section class=content>${md(body)}</section>
+          <section class=nav>
+            <nav>${md(nav)}</nav>
+          </section>
           <footer></footer>
         </section>
         <script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js></script>
