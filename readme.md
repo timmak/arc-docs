@@ -4,6 +4,4 @@
 
 [ ![Codeship Status for arc-repos/arc-docs](https://app.codeship.com/projects/1171c2b0-4fb7-0135-8928-02ec463c683c/status?branch=master)](https://app.codeship.com/projects/234129)
 
-Currently implemented: English / AWS.
-
-Translations and ports are most welcome!
+Currently implemented: English / AWS. Translations and ports are most welcome!
