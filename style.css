@@ -172,6 +172,31 @@ section>section h1 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.github-corner {
+  fill:#151513;
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+
+a.github-corner:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 390px) {
+  .github-corner {
+    position: absolute;
+  }
+
+  a.github-corner:hover {
+    color: #ffffff;
+  }
+}
+
+
 /* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
