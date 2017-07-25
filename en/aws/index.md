@@ -3,7 +3,7 @@
 
 Event driven programming with cloud functions is tricky to setup and maintain. `architect` offers a simplistic plaintext manifest and `npm` script based workflows for creating, deploying, working offline and more.
 
-Currently, architect` supports the following Amazon Web Services:
+Currently, `architect` supports the following Amazon Web Services:
 
 - [Lambda](https://aws.amazon.com/lambda/)
 - [API Gateway](https://aws.amazon.com/api-gateway/)
