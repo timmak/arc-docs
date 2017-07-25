@@ -17,7 +17,7 @@ The tradeoff is you are committing AWS configuration knowledge into your revisio
 
 ## The .arc file
 
-`architect` defines a simplistic plaintext format, `.arc`, as a manfiest file to solve the specific problems laid out above.
+`architect` defines a simple plaintext format, `.arc`, as a manfiest file to solve the specific problems laid out above.
 
 With `architect`, you can:
 
