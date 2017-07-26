@@ -1,4 +1,3 @@
-- [&#x1f329; architect](/)
 - [Introduction](/intro)
   - [Concepts](/intro/concepts)
   - [Limits](/intro/limits)
