@@ -10,7 +10,7 @@ Each cycle has taught new lessons in software architecture, and this most recent
 
 ## Early cloud computing wins
 
-Moving from physical servers to the cloud brough significant advances to our ability to deliver software:
+Moving from physical servers to the cloud brought significant advances to our ability to deliver software:
 
 - 100% utilization: only pay for what you use
 - Focus on your domain logic, free of infrastructure scaling concerns

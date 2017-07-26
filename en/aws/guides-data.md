@@ -1,6 +1,6 @@
 # Data
 
-> Data is the core to most apps; `architect` favors DynamoDB for its flexability and ease of use
+> Data is the core to most apps; `architect` favors DynamoDB for its flexibility and ease of use
 
 Given the following `.arc` file:
 
@@ -19,12 +19,12 @@ notes
 
 NOTES:
 
-- further seperating reads from writes is a decent idea
+- further separating reads from writes is a decent idea
 - isolating stage data from prod data is not a horrible idea
 
     Let's create a database client to do the usual persistence methods.
 
-Create a couple of modules `accounts` and `notes` to represent their corosponding tables:
+Create a couple of modules `accounts` and `notes` to represent their corresponding tables:
 
 ```bash
 mkdir accounts

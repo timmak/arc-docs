@@ -5,11 +5,11 @@ Cloud functions surface a unique set of entirely new problems:
 - Configuration tooling was designed for the last generation of computing metaphors (and often lags behind the releases of new functionality)
 - AWS is massive and overwhelming with many similar, but not the same, products
 - The web console is confusing, with divergent interfaces between interlocking services
-- Deep proprietary knowledge is required to configure and maintain common infrastructure primatives
+- Deep proprietary knowledge is required to configure and maintain common infrastructure primitives
 - Configuration and infrastructure can drift, leaving systems in states that are difficult to repeat / reproduce, and thus scale
 - Painful manifest files; JSON is difficult to read, has no comments, and unforgiving to edit; YAML isn't much better and especially worse with deeply nested statements
 
-_Some_ of these problems have been tamed with [infrastructure as code](https://en.wikipedia.org/wiki/Infrastructure_as_Code), creating repeatable and reproducable systems.
+_Some_ of these problems have been tamed with [infrastructure as code](https://en.wikipedia.org/wiki/Infrastructure_as_Code), creating repeatable and reproducible systems.
 
 The tradeoff is you are committing AWS configuration knowledge into your revision control systems.
 
@@ -17,13 +17,13 @@ The tradeoff is you are committing AWS configuration knowledge into your revisio
 
 ## The .arc file
 
-`architect` defines a simple plaintext format, `.arc`, as a manfiest file to solve the specific problems laid out above.
+`architect` defines a simple plaintext format, `.arc`, as a manifest file to solve the specific problems laid out above.
 
 With `architect`, you can:
 
-- Focus on defining your app architecture with a subset of service primatives as high level defintions
+- Focus on defining your app architecture with a subset of service primitives as high level definitions
 - Use `npm scripts` to  generate local code, configure, provision, and deploy cloud infrastructure from the `.arc` manifest
-- You can still safely use the console tactically to access and administer primatives defined in `.arc`
+- You can still safely use the console tactically to access and administer primitives defined in `.arc`
 - The format, parser, and tooling are completely open to extension
 
 > In theory, `.arc` is also entirely portable between cloud vendors. (However no ports to clouds other than AWS have been made as of today.)
@@ -36,7 +36,7 @@ The `.arc` format follows a few simple rules:
 - Sections start with `@`
 - **Everything between sections becomes instructions for generating AWS infrastructure**
 
-`.arc` files are made up of the following sections: 
+`.arc` files are made up of the following sections:
 
 - `@app` defines the application namespace
 - `@html` section defines html routes (API Gateway and Lambda)
@@ -46,7 +46,7 @@ The `.arc` format follows a few simple rules:
 - `@tables` defines database tables and trigger functions for them (DynamoDB)
 - `@indexes` defines additional database table indexes (DynamoDB)
 
-This is a complete `.arc` file example: 
+This is a complete `.arc` file example:
 
 ```arc
 # .arc
@@ -104,11 +104,11 @@ The `.arc` format is terse, easy to read, and quickly learnable to author. The e
 
 ## Implementing principles and practices
 
-`architect` follows many of the principles pioneered by agile and championed by devops. Versioning infrastructure. Tight feedback loops for dev, while maintaining isolation between stages. Systems that are consistent, inspectable, transparent, and exensible. 
+`architect` follows many of the principles pioneered by agile and championed by devops. Versioning infrastructure. Tight feedback loops for dev, while maintaining isolation between stages. Systems that are consistent, inspectable, transparent, and extensible.
 
 ### Architecture as text
 
-- `.arc` manifest file defines achitecture elements as plainly as possible in text
+- `.arc` manifest file defines architecture elements as plainly as possible in text
 - Nesting and syntax is deliberately constrained
 - And you can add comments!
 
@@ -120,11 +120,11 @@ The `.arc` format is terse, easy to read, and quickly learnable to author. The e
 
 ### Delivery is isolated from deployment
 
-- `arc-sandbox` allows you to work locally and offline from the cloud 
+- `arc-sandbox` allows you to work locally and offline from the cloud
 - `arc-deploy` treats `staging` and `production` as first class concepts
 - Deployment to `production` requires an extra manual step of setting `ARC_DEPLOY=production` env var
 
-### Extensible and flexibile systems
+### Extensible and flexible systems
 
 - `arc-parser` is open, and `architect` tooling ignores `@sections` it does not know
 - Therefore, you can use `.arc` with your own `npm` scripts
