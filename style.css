@@ -17,7 +17,7 @@ a:hover {
   text-decoration: none;
 }
 
-media (max-width: 390px) {
+media (max-width: 550px) {
   body:after {
     content: "<";
     position: fixed;
@@ -37,7 +37,7 @@ a:hover code {
   text-decoration: none;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 550px) {
   a {
     line-height: initial;
   }
@@ -89,15 +89,13 @@ hr {
 }
 
 .nav {
-  width: 170px;
-  min-width: 170px;
   background: #333333;
   position: fixed;
   overflow: auto;
   height: 100%;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 550px) {
   .nav {
     width: 100%;
     position: relative;
@@ -110,7 +108,7 @@ h2 {
   margin-top: 30px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 550px) {
   h2 {
     line-height: initial;
   }
@@ -121,8 +119,14 @@ ul li {
 }
 
 .nav ul {
-  margin: 10px 10px;
-  padding:0;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 }
 
 .nav ul ul {
@@ -132,6 +136,7 @@ ul li {
 .nav ul li {
   list-style:none;  
   padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 5px;
   line-height: 1.5em;
 }
@@ -159,7 +164,7 @@ ul li {
   float: left;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 550px) {
   .content {
     margin-left: 7%;
     margin-right: 7%;
@@ -186,7 +191,7 @@ a.github-corner:hover {
   color: #ffffff;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 550px) {
   .github-corner {
     position: absolute;
   }
