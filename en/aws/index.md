@@ -1,7 +1,7 @@
 # &#x1f329; architect
-## Provision and deploy cloud architecture as text
+## Provision and deploy cloud infrastructure with a simple plaintext manifest
 
-Event driven programming with cloud functions is tricky to setup and maintain. `architect` offers a simple plaintext manifest and `npm` script based workflows for creating, deploying, working offline and more.
+Event driven programming with cloud functions can be tricky to set up and maintain. `architect` offers a simple plaintext manifest and `npm` script based workflows for provisioning, deploying, orchestrating, and working offline with cloud infrastructure.
 
 Currently, `architect` supports the following Amazon Web Services:
 
