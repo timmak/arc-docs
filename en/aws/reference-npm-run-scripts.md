@@ -2,7 +2,7 @@
 
 ## `npm run` scripts execute common development workflows against an `.arc` file.
 
-- [`create`](#arc-create) creates code and corosponding cloud infrastructure
+- [`create`](#arc-create) creates code and corresponding cloud infrastructure
 - [`deploy`](#arc-deploy) deploys cloud functions
 - [`sandbox`](#arc-sandbox) runs cloud function code locally, offline and completely in memory
 - [`modules`](#arc-modules) manage common npm tasks across all cloud functions
@@ -71,7 +71,7 @@ ARC_DEPLOY=production npm run deploy src/html/get-index
 
 ## <a href=#arc-sandbox id=arc-sandbox>`sandbox`</a>
 
-Start a local webserver and in-memory DyanmoDB instance:
+Start a local web server and in-memory DyanmoDB instance:
 
 ```bash
 npm start

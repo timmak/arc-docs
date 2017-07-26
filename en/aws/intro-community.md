@@ -28,9 +28,9 @@ Repos (with issue trackers) and distributions can be found here:
 
 ## Alternative solutions
 
-If you are evaluating `architect` we also reccomend checking out:
+If you are evaluating `architect` we also recommend checking out:
 
-- [this space intentially blank for now! norobots]
+- [this space intentionally blank for now! norobots]
 
 We believe open source should foster the spirit of science where we can respect, learn, and build on each others work.
 

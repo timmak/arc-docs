@@ -1,10 +1,10 @@
 # Roadmap
 
-`architect` is open source so you can help! Jump over to the [community page](/intro/community) to get more info about becoming a contributer.
+`architect` is open source so you can help! Jump over to the [community page](/intro/community) to get more info about becoming a contributor.
 
 ## Near-term
 
-- `arc-functions` conslidate req / res impl
+- `arc-functions` consolidate req / res impl
 - `text/javascript` and `text/css` route handlers
 - `arc-env` infra env var and configuration management
 - `arc-docs` examples, guides, CRSF and URL helpers
