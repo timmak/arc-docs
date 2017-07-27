@@ -28,7 +28,7 @@ module.exports = function render (filename) {
       var pink = read(join(__dirname, 'images/logo-black.svg')).toString()
       var green = read(join(__dirname, 'images/logo-white-green.svg')).toString()
       var logo = (filename === 'index') ? `<h2 class=logo>${pink}</h2>` : ''
-      var classes = (!logo) ? 'nav' : 'nav home'
+      var classes = (!logo) ? '' : 'home'
       ledger[filename] = `
         <html>
         <head>
@@ -37,9 +37,9 @@ module.exports = function render (filename) {
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" type="text/css">
           <style type=text/css>${style}</style>
         </head>
-        <body>
+        <body class="${classes}">
         <section class=main>
-        <section class="${classes}">
+        <section class="nav">
           <h1 class=logo><a href="/">${green}</a></h1>
           <button class="nav-toggle"><span class="ir">Toggle Navigation</span></button>
           <nav>${md(nav)}</nav>

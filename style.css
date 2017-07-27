@@ -321,9 +321,13 @@ a.github-corner:hover {
   }
 
   .nav .logo {
-    display: block;
+    display: block !important;
     padding-right: 60px;
     height: 60px;
+  }
+
+  .home .content .logo {
+    display: none;
   }
 
   .nav-toggle {
