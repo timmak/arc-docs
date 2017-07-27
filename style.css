@@ -4,7 +4,7 @@
 
 html, body {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 html {
@@ -16,20 +16,9 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   color: #333333;
-  line-height: 190%;
+  line-height: 1.5em;
   font-size: 16px;
   overflow-x: hidden;
-}
-
-body:before {
-  content: '';
-  width: 50%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #333333;
-  z-index: -1;
 }
 
 a {
@@ -137,7 +126,6 @@ pre code {
   display: block;
   padding: 20px;
   opacity: 1;
-  line-height: 120%;
   overflow: auto;
 }
 
@@ -252,8 +240,8 @@ ul li {
 .nav-toggle:before,
 .nav-toggle:after {
   content: '';
-  width: 44px;
-  height: 5px;
+  width: 30px;
+  height: 3px;
   background: white;
 }
 
@@ -266,7 +254,7 @@ ul li {
 }
 
 .nav-open .nav-toggle:after {
-  transform: rotate(-45deg) translate(4px, -4px);
+  transform: rotate(-45deg) translate(2px, -3px);
 }
 
 .nav-toggle span {
