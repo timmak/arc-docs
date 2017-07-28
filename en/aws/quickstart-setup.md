@@ -26,4 +26,4 @@ Having your personal AWS setup separated from the work one is just a suggestion!
 
 You can learn more about AWS creds from the source: [Amazon Configuration and Credential Files](http://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html).
 
-### Next: [Install architect](/quickstart/install)
+## Next: [Install architect](/quickstart/install)
