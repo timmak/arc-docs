@@ -38,4 +38,4 @@ Run `npm run create` and check out the freshly deployed app.
 
 Congrats, you've successfully installed `architect`!
 
-## Next: [.arc project layout](/quickstart/arc-project-layout).
+## Next: [.arc project layout](/quickstart/arc-project-layout)

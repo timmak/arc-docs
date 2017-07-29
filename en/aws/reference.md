@@ -5,7 +5,7 @@
 - [Dev workflows using `npm run` scripts](/reference/npm-run-scripts)
 - [Authoring cloud functions](/reference/functions)
 
-## `.arc` file reference:
+## `.arc` file syntax reference:
 
 - [@app](/reference/app)
 - [@html](/reference/html)
