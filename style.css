@@ -91,7 +91,10 @@ a:hover code {
   text-decoration: none;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
+  .main {
+    min-width: 300px;
+  }
   a {
     line-height: initial;
   }
