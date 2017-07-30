@@ -71,7 +71,7 @@ ARC_DEPLOY=production npm run deploy src/html/get-index
 
 ## <a href=#arc-sandbox id=arc-sandbox>`sandbox`</a>
 
-Start a local web server and in-memory DyanmoDB instance:
+Start a local web server and in-memory DynamoDB instance:
 
 ```bash
 npm start
