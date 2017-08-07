@@ -17,7 +17,7 @@ Add the following to `scripts` in the `package.json`:
 {
   "create": "AWS_PROFILE=xxx AWS_REGION=us-west-1 arc-create",
   "deploy": "AWS_PROFILE=xxx AWS_REGION=us-west-1 arc-deploy",
-  "start": "NODE_ENV=testing arc-sandbox"
+  "start": "AWS_PROFILE=xxx AWS_REGION=us-west-1 NODE_ENV=testing arc-sandbox"
 }
 ```
 
