@@ -19,4 +19,5 @@
   - [@tables](/reference/tables)
   - [@indexes](/reference/indexes)
 - [Guides](/guides/)
+  - [Work Offline](/guides/offline)
   - [Custom Domains](/guides/custom-dns)
