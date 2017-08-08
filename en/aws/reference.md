@@ -12,6 +12,7 @@
 - [@json](/reference/json)
 - [@events](/reference/events)
 - [@scheduled](/reference/scheduled)
+- [@slack](/reference/slack)
 - [@tables](/reference/tables)
 - [@indexes](/reference/indexes)
 

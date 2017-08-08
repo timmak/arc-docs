@@ -31,4 +31,4 @@ And the following deployment Lambdas:
 - `testapp-staging-friyay-only`
 - `testapp-production-friyay-only`
 
-## Next: [Define DynamoDB tables with `@tables`](/reference/tables)
+## Next: [create `@slack` bots](/reference/slack)
