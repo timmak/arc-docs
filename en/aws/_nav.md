@@ -17,3 +17,5 @@
   - [@scheduled](/reference/scheduled)
   - [@tables](/reference/tables)
   - [@indexes](/reference/indexes)
+- [Guides](/guides/)
+  - [Custom Domains](/guides/custom-dns)

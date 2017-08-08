@@ -16,7 +16,7 @@ These instructions are adapted from the tutorial at [LEANX](http://www.leanx.eu/
 4. In a different browser tab or window, log into Cloudflare, select your domain and open the "Crypto" tab. In the SSL section, ensure SSL is set to "Full".
 5. Scroll down to the "Origin Certificates" section and click "Create Certificate".
 6. Let Cloudflare generate a private key and a CSR and choose RSA as the private key type.
-7. Make sure that the hostname for your custom API domain is covered. E.g. api.mydomain.com. You can specifically configure this custom domain or use a wildcard such as *.mydomain.com as is configured by default.
+7. Make sure that the hostname for your custom API domain is covered. E.g. api.mydomain.com. You can specifically configure this custom domain or use a wildcard such as `*.mydomain.com` as is configured by default.
 8. Pick PEM as the key format which is selected by default.
 9. Copy the Certificate body from your Cloudflare certificate to the "Certificate body" field in the AWS Certificate Management Console.
 10. Copy the Private key to the "Certificate private key" field in the AWS Certificate Management Console.
@@ -31,5 +31,18 @@ These instructions are adapted from the tutorial at [LEANX](http://www.leanx.eu/
 
 ## Route 53<a name="route-53"></a>
 
-Coming Soon
-
+1. Sign into AWS Route 53 and click on Hosted Zones
+2. Create Hosted Zone
+3. Copy the name server information to your domain registar (if you register with Amazon this happens automatically)
+4. Sign into AWS Certificate Manager
+5. Request a certificate (protip: setup both `example.com` and `*.example.com` for subdomains)
+6. Follow the instructions to verify the certificate
+7. Sign into AWS API Gateway
+8. Click on Custom Domain Names
+9. Create Custom Domain Name
+10. Enter the **Domain Name**, **ACM Certificate** you just verified, **Path** `/`, **Destination** API name and **Stage** of `staging` or `production`
+11. Copy the value of the generated **Distribution Domain Name** to your clipboard
+12. Sign back into Route53 and click into the domain you want to enable
+13. Create Record Set
+14. Set **Alias** `yes` and **Alias Target** to the **Distribution Domain Name** you just copied to your clipboard
+15. Create the Record Set (and be patient it can take a bit for everything to wire up)
