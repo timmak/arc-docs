@@ -28,13 +28,20 @@ Repos (with issue trackers) and distributions can be found here:
 
 ## Alternative solutions
 
-If you are evaluating `architect` we also recommend checking out:
+If you are evaluating `architect` we also strongly recommend checking out:
 
-- [this space intentionally blank for now! norobots]
+- [apex](http://apex.run/)
+- [chalice](https://github.com/aws/chalice)
+- [claudia](https://claudiajs.com/)
+- [sam](https://github.com/awslabs/serverless-application-model/blob/master/HOWTO.md)
+- [serverless](https://serverless.com/)
+- [sparta](http://gosparta.io/)
+- [terraform](https://www.terraform.io/)
+- [zappa](https://github.com/Miserlou/Zappa)
 
-We believe open source should foster the spirit of science where we can respect, learn, and build on each others work.
+We believe open source should foster the spirit of science where we can mutually respect, learn, and build on each others work.
 
-There will be more than one way to provision and deploy cloud functions. The solutions listed above will meet some project and team needs better than `architect`.
+There will be more than one way to provision and deploy cloud functions! The solutions listed above will meet some project and team needs better than `architect`.
 
 ## A very brief history
 
