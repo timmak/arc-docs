@@ -14,7 +14,7 @@ Whether we label them *constraints* or *limits*, they are **tradeoffs** you need
 - API Gateway: whereby 403 it probably meant 404
 - General sketchiness that is distributed systems (gray failures)
 - API Gateway API limits can be brutal, so creating http routes can be slow (i.e. generating a large amount of routes can take minutes)
-- Cloudwatch logs are not structured (so we search for `console.log` strings instead of querying structured data -- inspectability is hugely important for produciton systems)
+- Cloudwatch logs are not structured (so we search for `console.log` strings instead of querying structured data -- inspectability is hugely important for production systems)
 - Lambdas cannot execute for longer than 5 minutes 
 - Lambda functions require you to `npm install` to your project `node_modules` individually prior to deployment
 
