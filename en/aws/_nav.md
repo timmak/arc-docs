@@ -11,6 +11,7 @@
   - [Workflows](/reference/npm-run-scripts)
   - [Functions](/reference/functions)
   - [@app](/reference/app)
+  - [@domain](/reference/domain)
   - [@html](/reference/html)
   - [@json](/reference/json)
   - [@events](/reference/events)

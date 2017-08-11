@@ -2,9 +2,12 @@
 
 Setting up custom DNS is a necessity if you intend to use a custom domain for your deployed application. This guide lists ways to set up custom DNS with several popular DNS providers and we are always happy to accept contributions for steps to use additional providers.
 
-Jump to DNS provider:
-* [Cloudflare](#cloudflare)
+`architect` bakes in support for Amazon Route53. Following the [quickstart](/quickstart) you should be setup with `dns` entry under `scripts` in `package.json`. From there you need to add `@domain` to your `.arc` file, invoke `npm run dns` and follow the instructions for verifying certificates and adding nameservers to your registrar.
+
+If you _really_ want to manually configure DNS you can follow these guides below:
+
 * [Route 53](#route-53)
+* [Cloudflare](#cloudflare)
 
 ## Cloudflare<a name="cloudflare"></a>
 

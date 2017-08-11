@@ -4,6 +4,7 @@
 
 - [`create`](#arc-create) creates code and corresponding cloud infrastructure
 - [`deploy`](#arc-deploy) deploys cloud functions
+- [`dns`](#arc-dns) setup a custom domain
 - [`sandbox`](#arc-sandbox) runs cloud function code locally, offline and completely in memory
 - [`modules`](#arc-modules) manage common npm tasks across all cloud functions
 
@@ -17,12 +18,13 @@ Add the following to `scripts` in `package.json`:
 
 ```javascript
 {
-  "create": "AWS_PROFILE=xxx AWS_REGION=us-west-1 arc-create",
-  "deploy": "AWS_PROFILE=xxx AWS_REGION=us-west-1 arc-deploy",
+  "create": "AWS_PROFILE=xxx AWS_REGION=us-east-1 arc-create",
+  "deploy": "AWS_PROFILE=xxx AWS_REGION=us-east-1 arc-deploy",
+  "dns": "AWS_PROFILE=xxx AWS_REGION=us-east-1 arc-dns",
   "start": "NODE_ENV=testing arc-sandbox",
   "i": "arc-modules-install",
   "link": "arc-modules-link",
-  "uninstall": "arc-modules-uninstall",
+  "rm": "arc-modules-uninstall",
   "update": "arc-modules-update",
 }
 ```
@@ -66,6 +68,17 @@ Deploy a single function (example: `get /`) to `production`:
 ```bash
 ARC_DEPLOY=production npm run deploy src/html/get-index
 ```
+
+---
+
+## <a href=#arc-dns id=arc-dns>`dns`</a>
+
+Setup a custom domain on Route53:
+
+```bash
+npm run dns
+
+> This command needs to be re-run as you progress through setup steps of creating/verifying certificates
 
 ---
 

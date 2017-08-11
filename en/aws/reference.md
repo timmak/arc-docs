@@ -8,6 +8,7 @@
 ## `.arc` file syntax reference:
 
 - [@app](/reference/app)
+- [@domain](/reference/domain)
 - [@html](/reference/html)
 - [@json](/reference/json)
 - [@events](/reference/events)

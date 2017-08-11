@@ -16,4 +16,4 @@ A good `@app` is short, lowercase and dasherized.
 good-app
 ```
 
-## Next: [Defining routes with `@html`](/reference/html)
+## Next: [Setup custom domains with `@domain`](/reference/domain)
