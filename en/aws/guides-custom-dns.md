@@ -2,7 +2,7 @@
 
 Setting up custom DNS is a necessity if you intend to use a custom domain for your deployed application. This guide lists ways to set up custom DNS with several popular DNS providers and we are always happy to accept contributions for steps to use additional providers.
 
-`architect` bakes in support for Amazon Route53. Following the [quickstart](/quickstart) you should be setup with `dns` entry under `scripts` in `package.json`. From there you need to add `@domain` to your `.arc` file, invoke `npm run dns` and follow the instructions for verifying certificates and adding nameservers to your registrar.
+`architect` bakes in support for Amazon Route53. Following the [workflows reference](/reference/npm-run-scripts) to get setup with `dns` entry under `scripts` in `package.json`. From there add `@domain` to your `.arc` file, invoke `npm run dns` and follow the instructions.
 
 If you _really_ want to manually configure DNS you can follow these guides below:
 
