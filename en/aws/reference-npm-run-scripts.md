@@ -77,6 +77,7 @@ Setup a custom domain on Route53:
 
 ```bash
 npm run dns
+```
 
 > This command needs to be re-run as you progress through setup steps of creating/verifying certificates
 

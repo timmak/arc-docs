@@ -2,7 +2,7 @@
 
 ## `@domain` sets up DNS for a custom domain name.
 
-For example, to create the domain (wut.click)[https://wut.click]:
+For example, to create the domain [wut.click](https://wut.click):
 
 ```arc
 @app
