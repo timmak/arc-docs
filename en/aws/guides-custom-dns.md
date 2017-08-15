@@ -2,17 +2,40 @@
 
 Setting up custom DNS is a necessity if you intend to use a custom domain for your deployed application. This guide lists ways to set up custom DNS with several popular DNS providers and we are always happy to accept contributions for steps to use additional providers.
 
-`architect` bakes in support for Amazon Route53. Following the [workflows reference](/reference/npm-run-scripts) to get setup with `dns` entry under `scripts` in `package.json`. From there add `@domain` to your `.arc` file, invoke `npm run dns` and follow the instructions.
+To use Amazon Route53:
+
+1. Ensure your project `package.json` has `dns` entry under `scripts` per [workflows reference](/reference/npm-run-scripts)
+2. Add `@domain` to your `.arc` file with a value of the domain name you wish to setup
+3. Invoke `npm run dns` and follow the instructions
 
 If you _really_ want to manually configure DNS you can follow these guides below:
 
 * [Route 53](#route-53)
-* [Cloudflare](#cloudflare)
+* [Cloudflare](#cloudflare) 
+
+## Route 53<a name="route-53"></a>
+
+1. Sign into AWS Route 53 and click on Hosted Zones
+2. Create Hosted Zone
+3. Copy the name server information to your domain registar (if you register with Amazon this happens automatically)
+4. Sign into AWS Certificate Manager
+5. Request a certificate (protip: setup both `example.com` and `*.example.com` for subdomains)
+6. Follow the instructions to verify the certificate
+7. Sign into AWS API Gateway
+8. Click on Custom Domain Names
+9. Create Custom Domain Name
+10. Enter the **Domain Name**, **ACM Certificate** you just verified, **Path** `/`, **Destination** API name and **Stage** of `staging` or `production`
+11. Copy the value of the generated **Distribution Domain Name** to your clipboard
+12. Sign back into Route53 and click into the domain you want to enable
+13. Create Record Set
+14. Set **Alias** `yes` and **Alias Target** to the **Distribution Domain Name** you just copied to your clipboard
+15. Create the Record Set (and be patient it can take a bit for everything to wire up)
 
 ## Cloudflare<a name="cloudflare"></a>
 
 These instructions are adapted from the tutorial at [LEANX](http://www.leanx.eu/tutorials/set-up-amazons-api-gateway-custom-domain-with-cloudflare) and updated to our most recent experience deploying this documentation site to AWS, using architect and custom DNS via Cloudflare. Your mileage may vary.
 
+0. [Strongly reccomend: leave Cloudflare](http://www.sfgate.com/technology/businessinsider/article/Cloudflare-is-helping-defend-a-neo-Nazi-website-11818696.php)
 1. First, ensure that your domain is registered and is using the Cloudflare name servers and that your architect-generated application has been deployed to AWS.
 2. In your AWS management console go to the Certificate Management service and ensure you are in the US East (N. Virginia) aka us-east-1 region.
 3. Click on "Import a certificate".
@@ -32,20 +55,3 @@ These instructions are adapted from the tutorial at [LEANX](http://www.leanx.eu/
 17. Now the custom domain name will be created in AWS Cloudfront. It can take up to an hour before the domain becomes active.
 18. The final step is to create a new CNAME record in Cloudflare to link your custom domain to the Cloudfront url which you can copy from the Distribution Domain Name in the Custom Domain Names console.
 
-## Route 53<a name="route-53"></a>
-
-1. Sign into AWS Route 53 and click on Hosted Zones
-2. Create Hosted Zone
-3. Copy the name server information to your domain registar (if you register with Amazon this happens automatically)
-4. Sign into AWS Certificate Manager
-5. Request a certificate (protip: setup both `example.com` and `*.example.com` for subdomains)
-6. Follow the instructions to verify the certificate
-7. Sign into AWS API Gateway
-8. Click on Custom Domain Names
-9. Create Custom Domain Name
-10. Enter the **Domain Name**, **ACM Certificate** you just verified, **Path** `/`, **Destination** API name and **Stage** of `staging` or `production`
-11. Copy the value of the generated **Distribution Domain Name** to your clipboard
-12. Sign back into Route53 and click into the domain you want to enable
-13. Create Record Set
-14. Set **Alias** `yes` and **Alias Target** to the **Distribution Domain Name** you just copied to your clipboard
-15. Create the Record Set (and be patient it can take a bit for everything to wire up)

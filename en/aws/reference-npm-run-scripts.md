@@ -73,13 +73,20 @@ ARC_DEPLOY=production npm run deploy src/html/get-index
 
 ## <a href=#arc-dns id=arc-dns>`dns`</a>
 
-Setup a custom domain on Route53:
+Setting up a custom domain for API Gateway on Route53 requires the following steps:
+
+- Setup certificates with AWS Certificate Manager
+- Create a DNS Recordset on Route 53
+- Setup `staging` and `production` Domains in API Gateway
+- Create corosponding Alias records in Route 53
+
+Proceed through these steps by running:
 
 ```bash
 npm run dns
 ```
 
-> This command needs to be re-run as you progress through setup steps of creating/verifying certificates
+> Note: `npm run dns` needs to be re-run as you progress through setup steps of creating/verifying certificates
 
 ---
 
