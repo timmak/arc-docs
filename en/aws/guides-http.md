@@ -33,7 +33,7 @@ exports.handler = arc.html.get(index)
 - `params` - any url param defined
 - `query` - any query params defined
 - `headers` - a plain `Object` of request headers 
-- `session` - a plain `Object` representing the curren session
+- `session` - a plain `Object` representing the current session
 
 `req` also has two hidden helper methods:
 
@@ -123,7 +123,7 @@ Note:
 
 - HTTP endpoints are slower with sessions enabled becuase its marshalling data to and from DynamoDB
 - To disable session support remove `SESSION_TABLE_NAME` environment variable from the Lambda configuration in the AWS console (session becomes a pass thru)
-- If disabled you can also delete any corosponding session tables from DynamoDB
+- If disabled you can also delete any corresponding session tables from DynamoDB
 
 ## Middleware Pattern
 
