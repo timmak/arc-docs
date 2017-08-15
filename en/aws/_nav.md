@@ -21,4 +21,5 @@
   - [@indexes](/reference/indexes)
 - [Guides](/guides/)
   - [Work Offline](/guides/offline)
+  - [HTTP](/guides/http)
   - [Custom Domains](/guides/custom-dns)
