@@ -6,8 +6,10 @@
 
 - `@js` for `text/javascript` lambda route handlers
 - `@css` for `text/css` lambda route handlers
-- `@static` to `.arc` for CloudFront of S3 static assets
-- `arc-env` infra env var and configuration management
+- `npm run dns` generates a `static.domainname.com` CNAME that points to an S3 CloudFront Distribution from `@domain` value 
+- `@views` support added to `.arc` for universal render support 
+- `arc-env` env variables and configuration management
+- Generated API Gateway `staging` automatically adds a `GET /_logs` endpoint that pretty prints CloudWatch logs
 
 ## Recently shipped
 
@@ -20,4 +22,3 @@
 
 - `arc-docs` translations
 - Syntax highlighting for `.arc` in popular editors and Prism
-- Ports to other clouds
