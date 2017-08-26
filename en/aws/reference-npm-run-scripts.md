@@ -22,7 +22,7 @@ Add the following to `scripts` in `package.json`:
   "deploy": "AWS_PROFILE=xxx AWS_REGION=us-east-1 arc-deploy",
   "dns": "AWS_PROFILE=xxx AWS_REGION=us-east-1 arc-dns",
   "start": "NODE_ENV=testing arc-sandbox",
-  "i": "arc-modules-install",
+  "install": "arc-modules-install",
   "link": "arc-modules-link",
   "rm": "arc-modules-uninstall",
   "update": "arc-modules-update",
